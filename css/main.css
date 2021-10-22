@@ -94,6 +94,41 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 100vw;
 }
   
+.icons-div  {
+    border: solid;
+    overflow: hidden;
+}
+.icons-div img {
+    border: solid;
+    min-width: 1500px;
+    max-height: 500px;
+    width: 100vw;
+}
+.icons-div .card  {
+    border: solid;
+    background-color:rgb(194 225 240 / 85%) ;
+    height:100%;
+    padding: 10px 5px;
+}
+.icons-div .img-div{
+    /* border: solid; */
+    width:29%;
+    /* min-width: 90px; */
+    display: flex;
+    /* background-color: black; */
+}
+.icons-div .text-div{
+    /* border: solid; */
+    width: 70%;
+    margin: 0px 0 0 1px;
+    display: block;
+
+}
+.icons-div .img-div i{
+    /* border: solid; */
+    margin: auto;
+  font-size: 50px;
+}
   /* Place text in the middle of the image */
   .hero-text {
     text-align: center;
@@ -124,6 +159,18 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         top: 35%;
         left: 50%;
       }
+      .icons-div .img-div{
+      
+        width:100%;
+       
+    }
+    .icons-div .text-div{
+        /* border: solid; */
+        width:100%;
+        text-align: center;
+     
+    
+    }
 }
   @media (min-width: 1025px){
       /*Small smartphones [325px -> 425px]*/

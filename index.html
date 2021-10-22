@@ -27,11 +27,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <script>
-      ScrollReveal().reveal('.headline')
-      ScrollReveal().reveal('.tagline', { delay: 500 })
-      ScrollReveal().reveal('.punchline', { delay: 2000 })
-    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -39,7 +39,7 @@
     <div class="d-flex bg-info nav">
       <div
         class="me-auto p-2 bg-info logo"
-        style="font-family: 'Roboto', sans-serif;"
+        style="font-family: 'Roboto', sans-serif"
       >
         <i class="fab fa-accusoft"></i>
         Mi Record
@@ -48,7 +48,7 @@
       <div class="p-2 bg-info"><a href="about.html#why-us">About</a></div>
       <div class="p-2 bg-info">
         <a
-          style="cursor: pointer;"
+          style="cursor: pointer"
           hreflang="#"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -77,11 +77,13 @@
     </div>
     <div>
       <div class="hero-image">
-        <div class="hero-text">
+        <div class="hero-text animate__bounce">
           <i class="fab fa-accusoft"></i>
           <h1>Mi Recordes</h1>
-          <p>And I'm a Photographer</p>
-          <!-- <button>Hire me</button> -->
+          <p>And I'm your Record keeper</p>
+          <button class="btn btn-sm btn-outline-info text-light">
+            Know How
+          </button>
         </div>
 
         <div class="d-flex">
@@ -129,28 +131,127 @@
       </div>
     </div>
     <div class="card m-3 text-info text-center p-3">
-        <h3 class="header-text ">
-            <u>  About us</u>        </h3>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis praesentium inventore magnam! Quibusdam in magnam, magni earum delectus ad quis, aliquam cumque repellendus sint est fuga quisquam eum optio.<br>
-                Exercitationem molestiae, ad eum praesentium tempora, quibusdam corporis dolor expedita, excepturi aliquam velit! Ad quo qui aliquid aperiam. Blanditiis, natus corporis deserunt nam maxime earum tenetur accusantium repudiandae velit ipsum!<br>
-                Quod unde corporis eius natus ipsum quasi saepe voluptatem perferendis, nobis voluptatibus accusantium, quidem dolore. Autem at sunt repellat harum illo qui nihil officia illum dolorem! Nihil unde alias dolorum!<br>
-                <a href="about.html" class="btn btm-sm btn-outline-info mt-3" role="button">More..</a>
-            </div>
+      <h3 class="header-text">
+        <u> About us</u>
+      </h3>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis
+        praesentium inventore magnam! Quibusdam in magnam, magni earum delectus
+        ad quis, aliquam cumque repellendus sint est fuga quisquam eum optio.<br />
+        Exercitationem molestiae, ad eum praesentium tempora, quibusdam corporis
+        dolor expedita, excepturi aliquam velit! Ad quo qui aliquid aperiam.
+        Blanditiis, natus corporis deserunt nam maxime earum tenetur accusantium
+        repudiandae velit ipsum!<br />
+        Quod unde corporis eius natus ipsum quasi saepe voluptatem perferendis,
+        nobis voluptatibus accusantium, quidem dolore. Autem at sunt repellat
+        harum illo qui nihil officia illum dolorem! Nihil unde alias dolorum!<br />
+        <a
+          href="about.html"
+          class="btn btm-sm btn-outline-info mt-3"
+          role="button"
+          >More..</a
+        >
+      </div>
     </div>
 
-    <div class="m-3">
-        <div class="card text-info">
-           <div class="d-flex">
-            <div>
-                <img src="img/Timeline.svg" class="w-50 m-auto"  alt="">
-            </div>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil officiis et, id quisquam vero sit nulla, non eos dicta dignissimos esse, iusto quo magnam atque deserunt error ratione vel?
-            </div>
-           </div>
-           
+    <div class="m-3 icons-div">
+      <div class="row">
+        <div class="col-sm-6 d-flex">
+          <img
+            src="img/ab1.jpg"
+            class="d-none d-sm-block m-auto w-100"
+            alt="img_div"
+          />
         </div>
+        <div class="col-sm-6">
+          <div class="card bg -info">
+            <h3 class="text-center">Keep Records On</h3>
+            <div class="d-flex flex-wrap mt-3">
+              <div class="img-div">
+               <i class="fas fa-hand-holding-usd"></i>
+              </div>
+              <div class="text-div">
+                <div style="justify-items: center"><b>Finance</b></div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+            <!-- start -->
+            <div class="d-flex flex-wrap mt-3">
+              <div class="img-div">
+               <i class="fas fa-briefcase" aria-hidden="true"></i>
+              </div>
+              <div class="text-div">
+                <div style="justify-items: center"><b>Portfolio</b></div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad voluptates quam vitae 
+              </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="d-flex flex-wrap mt-3">
+              <div class="img-div">
+              <i class="fas fa-project-diagram"></i>
+              </div>
+              <div class="text-div">
+                <div style="justify-items: center"><b>Projects</b></div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad voluptates quam vitae 
+              </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="d-flex flex-wrap mt-3">
+              <div class="img-div">
+               <i class="fas fa-link"></i>
+              </div>
+              <div class="text-div">
+                <div style="justify-items: center"><b>Social Links</b></div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad voluptates quam vitae 
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- <div class="carousel">
+      <div class="carousel__slide">
+        <img src="img/Timeline.svg" alt="">
+      </div>
+      <div class="carousel__slide">
+        <img src="img/Timeline.svg" alt="">
+        
+      </div>
+      <div class="carousel__slide">
+        <img src="img/Timeline.svg" alt="">
+
+      </div>
+    </div>
+    <div id="myCarousel" class="carousel">
+      <div class="carousel__slide">
+        <img data-lazy-src="img/Timeline.svg" />
+      </div>
+      <div class="carousel__slide">
+        <img data-lazy-src="img/Timeline.svg" />
+      </div>
+      <div class="carousel__slide">
+        <img data-lazy-src="img/Timeline.svg" />
+      </div>
+    </div> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+      const myCarousel = new Carousel(document.querySelector(".carousel"), {
+  slides: [
+    {
+      html: "1",
+    },
+    {
+      html: "2",
+    },
+    {
+      html: "3",
+    },
+  ],
+});
+    </script> -->
+    <script src="js/animate.js"></script>
   </body>
 </html>
