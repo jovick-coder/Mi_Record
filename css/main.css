@@ -69,52 +69,44 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     overflow: hidden;
 }
 #open:checked ~ .row .about-side-nav{
-        position: absolute;
     width: 0;
+        /* position: absolute; */
 }
-#nav-btn {
+/* #nav-btn { */
     /* display: none; */
-}
-#open:checked ~ #nav-btn{
+/* } */
+/* #open:checked ~ #nav-btn{ */
     /* display: block; */
     /* position: absolute; */
 
-}
+/* } */
 
 
 /* The hero image */
-.hero-image {
+.top-image-div {
     background-color: rgb(194 225 240 / 85%);
-}
-.hero-image i{
-    font-size: 10vw;
-}
-.hero-image img{
-    max-width: 500px;
-    width: 100vw;
-}
-  
+}  
 .icons-div  {
-    border: solid;
+    /* border: solid; */
     overflow: hidden;
 }
 .icons-div img {
-    border: solid;
+    /* border: solid; */
     min-width: 1500px;
     max-height: 500px;
     width: 100vw;
 }
 .icons-div .card  {
-    border: solid;
+    /* border: solid; */
     background-color:rgb(194 225 240 / 85%) ;
     height:100%;
     padding: 10px 5px;
 }
 .icons-div .img-div{
     /* border: solid; */
-    width:29%;
+    /* width:29%; */
     /* min-width: 90px; */
-    display: flex;
+    /* display: flex; */
     /* background-color: black; */
 }
 .icons-div .text-div{
@@ -131,13 +123,13 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
   /* Place text in the middle of the image */
   .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     color: white;
-    font-size: 3vw;
+    /* font-size: 3vw; */
   }
   .icon-div{
       flex-wrap: wrap;
@@ -156,8 +148,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   @media (max-width: 426px){
       /*Small smartphones [325px -> 425px]*/
       .hero-text {
-        top: 35%;
-        left: 50%;
+        /* top: 35%;
+        left: 50%; */
       }
       .icons-div .img-div{
       
@@ -172,20 +164,24 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
     }
 }
+  @media (max-width: 575px){
+      /*Small smartphones [325px -> 425px]*/
+      .about-side-nav{
+          display: none;
+          position: absolute;
+          z-index: 10;
+          background-color: #ddd;
+          width: 0;
+        }
+        #open:checked ~ .row .about-side-nav{
+          width: 50vw;
+          min-height: 100%;
+            position: fixed;
+    }
+      
+}
   @media (min-width: 1025px){
       /*Small smartphones [325px -> 425px]*/
-      .hero-text {
-font-size: 25px;
-top: 45%;
-left: 50%;
-      }
-      .hero-text h1 {
-font-size: 35px;
 
-      
-      }
-      .hero-image i{
-        font-size: 100px;
-    }
 
 }

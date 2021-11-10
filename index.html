@@ -31,7 +31,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
     />
-    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -45,7 +48,7 @@
         Mi Record
       </div>
       <div class="p-2 bg-info"><a href="index.html">Home</a></div>
-      <div class="p-2 bg-info"><a href="about.html#why-us">About</a></div>
+      <div class="p-2 bg-info"><a href="about.html">About</a></div>
       <div class="p-2 bg-info">
         <a
           style="cursor: pointer"
@@ -75,20 +78,96 @@
         </ul>
       </div>
     </div>
-    <div>
-      <div class="hero-image">
-        <div class="hero-text animate__bounce">
-          <i class="fab fa-accusoft"></i>
-          <h1>Mi Recordes</h1>
-          <p>And I'm your Record keeper</p>
-          <button class="btn btn-sm btn-outline-info text-light">
-            Know How
-          </button>
-        </div>
+    <style>
+      .top-img {
+        width: 50%;
+        min-width: 300px;
+        max-width: 400px;
+      }
+      .top-text {
+        max-width: 500px;
+        width: 50%;
+        min-width: 300px;
 
-        <div class="d-flex">
-          <img src="img/Timeline.svg" class="m-auto" alt="" />
-        </div>
+        font-family: "Times New Roman", Times, serif;
+        /* border: solid red; */
+      }
+      .top-image-div .d-flex {
+        /* border: solid red; */
+      }
+      .top-image-div p {
+        font-size: 16px;
+        margin: 0;
+      }
+      .top-image-div h1 {
+        font-size: 40px;
+        margin: 10px;
+      }
+      @media (max-width: 863px) {
+        /*Small smartphones [325px -> 425px]*/
+
+        .top-img {
+          width: 300px;
+        }
+        .top-text {
+          width: 300px;
+          /* border: solid green; */
+          font-size: 12px;
+        }
+        .top-image-div p {
+          font-size: 10px;
+          margin: 0;
+        }
+        .top-image-div h1 {
+          font-size: 30px;
+          margin: 10px;
+        }
+      }
+      @media (max-width: 631px) {
+        /*Small smartphones [325px -> 425px]*/
+
+        .top-image-div{
+          position: relative;
+          /* display: none; */
+          /* justify-content: none; */
+        }
+        .top-img {
+          width: 100vw;
+        }
+        .top-text {
+          margin: auto 0;
+          top: 30px;
+          position: absolute;
+          width: 100vw;
+          padding:5px 20px;
+          /* border: solid blue; */
+          background-color: rgba(0, 0, 0, 0.481);
+          font-size: 12px;
+        }
+        .top-text p {
+          /* color: red; */
+          font-size: 10px;
+          margin: 0;
+        }
+        .top-text h1 {
+          font-size: 30px;
+          margin: 10px;
+        }
+      }
+    </style>
+    <div class="top-image-div d-flex flex-wrap justify-content-around">
+      <div class="top-text animate__animated animate__bounce my-auto mx-3">
+        <p>ACCOUNTING SOFTWARE | INTUIT QUICKBOOKS | GLOBAL</p>
+        <h1>Smart, simple online accounting software for small business</h1>
+        <span>
+          Track expenses, customise invoices, run reports and even more all from
+          one place.</span
+        >
+        <br />
+        <button class="btn btn-sm btn-outline-info text-light">Know How</button>
+      </div>
+      <div class="top-img">
+        <img src="img/Timeline.svg" class="w-100 my-3" alt="" />
       </div>
     </div>
     <div class="container mt-3 icon-div text-info">
@@ -168,7 +247,7 @@
             <h3 class="text-center">Keep Records On</h3>
             <div class="d-flex flex-wrap mt-3">
               <div class="img-div">
-               <i class="fas fa-hand-holding-usd"></i>
+                <i class="fas fa-hand-holding-usd"></i>
               </div>
               <div class="text-div">
                 <div style="justify-items: center"><b>Finance</b></div>
@@ -178,39 +257,58 @@
             <!-- start -->
             <div class="d-flex flex-wrap mt-3">
               <div class="img-div">
-               <i class="fas fa-briefcase" aria-hidden="true"></i>
+                <i class="fas fa-briefcase" aria-hidden="true"></i>
               </div>
               <div class="text-div">
                 <div style="justify-items: center"><b>Portfolio</b></div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad voluptates quam vitae 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                ad voluptates quam vitae
               </div>
             </div>
             <!-- end -->
             <!-- start -->
             <div class="d-flex flex-wrap mt-3">
               <div class="img-div">
-              <i class="fas fa-project-diagram"></i>
+                <i class="fas fa-project-diagram"></i>
               </div>
               <div class="text-div">
                 <div style="justify-items: center"><b>Projects</b></div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad voluptates quam vitae 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                ad voluptates quam vitae
               </div>
             </div>
             <!-- end -->
             <!-- start -->
             <div class="d-flex flex-wrap mt-3">
               <div class="img-div">
-               <i class="fas fa-link"></i>
+                <i class="fas fa-link"></i>
               </div>
               <div class="text-div">
                 <div style="justify-items: center"><b>Social Links</b></div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad voluptates quam vitae 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                ad voluptates quam vitae
               </div>
             </div>
             <!-- end -->
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="footer bg-info">
+      <div class="me-auto p-2 logo" style="font-family: 'Roboto', sans-serif">
+        <i class="fab fa-accusoft"></i>
+        Mi Record &copy; 2021
+      </div>
+      <!-- <div class="container">
+        <b>Navigation</b>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li> <a href="reg.html">Sign up</a></li>
+          <li> <a href="login.html">Sign in</a></li>
+        </ul>
+      </div> -->
     </div>
     <!-- <div class="carousel">
       <div class="carousel__slide">
