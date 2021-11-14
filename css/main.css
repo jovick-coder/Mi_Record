@@ -1,6 +1,6 @@
 body{
-    background-color: purple;
-    color: #fff;
+    /* background-color: purple; */
+    /* color: #fff; */
 }
 .logo{
     font-family: 'Roboto', sans-serif;
@@ -185,3 +185,66 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 
 }
+/*//////////////////////////////////////////////////*/
+.top-img {
+    width: 50%;
+    min-width: 300px;
+    max-width: 400px;
+  }
+  .top-text {
+    max-width: 500px;
+    width: 50%;
+    min-width: 300px;
+
+    font-family: "Times New Roman", Times, serif;
+  }
+  .top-image-div p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .top-image-div h1 {
+    font-size: 40px;
+    margin: 10px;
+  }
+  @media (max-width: 863px) {
+    .top-img {
+      width: 300px;
+    }
+    .top-text {
+      width: 300px;
+      font-size: 12px;
+    }
+    .top-image-div p {
+      font-size: 10px;
+      margin: 0;
+    }
+    .top-image-div h1 {
+      font-size: 30px;
+      margin: 10px;
+    }
+  }
+  @media (max-width: 631px) {
+    .top-image-div{
+      position: relative;
+    }
+    .top-img {
+      width: 100vw;
+    }
+    .top-text {
+      margin: auto 0;
+      top: 30px;
+      position: absolute;
+      width: 100vw;
+      padding:5px 20px;
+      background-color: rgba(0, 0, 0, 0.481);
+      font-size: 12px;
+    }
+    .top-text p {
+      font-size: 10px;
+      margin: 0;
+    }
+    .top-text h1 {
+      font-size: 30px;
+      margin: 10px;
+    }
+  }
