@@ -20,7 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -78,85 +78,8 @@
         </ul>
       </div>
     </div>
-    <style>
-      .top-img {
-        width: 50%;
-        min-width: 300px;
-        max-width: 400px;
-      }
-      .top-text {
-        max-width: 500px;
-        width: 50%;
-        min-width: 300px;
-
-        font-family: "Times New Roman", Times, serif;
-        /* border: solid red; */
-      }
-      .top-image-div .d-flex {
-        /* border: solid red; */
-      }
-      .top-image-div p {
-        font-size: 16px;
-        margin: 0;
-      }
-      .top-image-div h1 {
-        font-size: 40px;
-        margin: 10px;
-      }
-      @media (max-width: 863px) {
-        /*Small smartphones [325px -> 425px]*/
-
-        .top-img {
-          width: 300px;
-        }
-        .top-text {
-          width: 300px;
-          /* border: solid green; */
-          font-size: 12px;
-        }
-        .top-image-div p {
-          font-size: 10px;
-          margin: 0;
-        }
-        .top-image-div h1 {
-          font-size: 30px;
-          margin: 10px;
-        }
-      }
-      @media (max-width: 631px) {
-        /*Small smartphones [325px -> 425px]*/
-
-        .top-image-div{
-          position: relative;
-          /* display: none; */
-          /* justify-content: none; */
-        }
-        .top-img {
-          width: 100vw;
-        }
-        .top-text {
-          margin: auto 0;
-          top: 30px;
-          position: absolute;
-          width: 100vw;
-          padding:5px 20px;
-          /* border: solid blue; */
-          background-color: rgba(0, 0, 0, 0.481);
-          font-size: 12px;
-        }
-        .top-text p {
-          /* color: red; */
-          font-size: 10px;
-          margin: 0;
-        }
-        .top-text h1 {
-          font-size: 30px;
-          margin: 10px;
-        }
-      }
-    </style>
     <div class="top-image-div d-flex flex-wrap justify-content-around">
-      <div class="top-text animate__animated animate__bounce my-auto mx-3">
+      <div class="top-text my-auto mx-3" data-aos="fade-down">
         <p>ACCOUNTING SOFTWARE | INTUIT QUICKBOOKS | GLOBAL</p>
         <h1>Smart, simple online accounting software for small business</h1>
         <span>
@@ -164,192 +87,180 @@
           one place.</span
         >
         <br />
-        <button class="btn btn-sm btn-outline-info text-light">Know How</button>
+        <button class="btn btn-sm btn-outline-info text-li ght">Know How</button>
       </div>
       <div class="top-img">
-        <img src="img/Timeline.svg" class="w-100 my-3" alt="" />
-      </div>
-    </div>
-    <div class="container mt-3 icon-div text-info">
-      <u>
-        <h3 class="text-center">Mi Todos</h3>
-      </u>
-      <div class="d-flex justify-content-around m-auto flex-wrap">
-        <div class="icon">
-          <div class="card">
-            <div class="text m-auto">
-              <i class="fas fa-pen"></i>
-              Write
-            </div>
-          </div>
-        </div>
-        <div class="icon">
-          <div class="card">
-            <div class="text m-auto">
-              <i class="fas fa-save"></i>
-              Save
-            </div>
-          </div>
-        </div>
-        <div class="icon">
-          <div class="card">
-            <div class="text m-auto">
-              <i class="fas fa-edit"></i>
-              Edit
-            </div>
-          </div>
-        </div>
-        <div class="icon">
-          <div class="card">
-            <div class="text m-auto">
-              <i class="fas fa-book-open"></i>
-              Read
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card m-3 text-info text-center p-3">
-      <h3 class="header-text">
-        <u> About us</u>
-      </h3>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis
-        praesentium inventore magnam! Quibusdam in magnam, magni earum delectus
-        ad quis, aliquam cumque repellendus sint est fuga quisquam eum optio.<br />
-        Exercitationem molestiae, ad eum praesentium tempora, quibusdam corporis
-        dolor expedita, excepturi aliquam velit! Ad quo qui aliquid aperiam.
-        Blanditiis, natus corporis deserunt nam maxime earum tenetur accusantium
-        repudiandae velit ipsum!<br />
-        Quod unde corporis eius natus ipsum quasi saepe voluptatem perferendis,
-        nobis voluptatibus accusantium, quidem dolore. Autem at sunt repellat
-        harum illo qui nihil officia illum dolorem! Nihil unde alias dolorum!<br />
-        <a
-          href="about.html"
-          class="btn btm-sm btn-outline-info mt-3"
-          role="button"
-          >More..</a
-        >
+        <img src="img/Timeline.svg" class="w-100 my-3 " data-aos="fade-left" alt="" />
       </div>
     </div>
 
-    <div class="m-3 icons-div">
-      <div class="row">
-        <div class="col-sm-6 d-flex">
-          <img
-            src="img/ab1.jpg"
-            class="d-none d-sm-block m-auto w-100"
-            alt="img_div"
-          />
-        </div>
-        <div class="col-sm-6">
-          <div class="card bg -info">
-            <h3 class="text-center">Keep Records On</h3>
-            <div class="d-flex flex-wrap mt-3">
-              <div class="img-div">
-                <i class="fas fa-hand-holding-usd"></i>
+    <section class="todos">
+      <h2 data-aos="zoom-in" class="text-center mt-3">Mi Todos</h2>
+
+      <style>
+        .todos {
+          flex-wrap: wrap;
+        }
+        .todos .card
+        {
+          width:200px;
+          height: 250px;
+          border: none;
+        }
+        .todos .card i{
+          font-size: 50px;
+          margin: 5px auto;
+        }
+        .todos .card span{
+          font-size: 20px;
+          font-weight: bold;
+          text-decoration: double;
+        }
+      </style>
+ <div class="d-flex flex-wrap justify-content-around">
+   <div data-aos="zoom-in" class="card text-center m-3 p-1">
+    <i class="fas fa-pen"></i>
+    <span class="mt-1"> Write</span>
+    QuickBooks Online keeps everything in its right place, so you’ll always have
+   </div>
+   <div data-aos="zoom-in" class="card text-center m-3 p-1">
+    <i class="fas fa-save"></i>
+    <span class="mt-1"> save</span>
+    QuickBooks Online keeps everything in its right place, so you’ll always have
+   </div>
+   <div data-aos="zoom-in" class="card text-center m-3 p-1">
+    <i class="fas fa-edit"></i>
+    <span class="mt-1"> Edit</span>
+    QuickBooks Online keeps everything in its right place, so you’ll always have
+   </div>
+   <div data-aos="zoom-in" class="card text-center m-3 p-1">
+    <i class="fas fa-book-open"></i>
+    <span class="mt-1">Read</span>
+    QuickBooks Online keeps everything in its right place, so you’ll always have
+   </div>
+
+ </div>
+      
+    </section>
+    <section>
+      <h2 data-aos="fade-up"  class="text-center">Manage everything in one place</h2>
+<style>
+.manage-div{
+  background-color: rgb(243, 243, 243);
+  margin: 20px;
+}
+.manage-div .image-div{
+  /* border: solid; */
+  padding-top: 10px;
+display: inline-flex;
+}
+.manage-div img{
+  width: 80%;
+  margin-left: auto;
+margin-top: auto;
+}
+.manage-div .text-div{
+margin: auto 10px;
+
+}
+.manage-div .text-div button{
+  border: none;
+  border-bottom: solid #0DCAF0 3px;
+  margin-top: 10px;
+}
+.manage-div .text-div button:hover{
+
+  background-color: #CBE5F2;
+}
+</style>
+   <div class="d-flex manage-div">
+    <div class="text-div" data-aos="zoom-in">
+      <h3>Work from anywhere on multiple devices</h3>
+      Access and manage your books from your computer, laptop, tablet, or smartphone anytime you choose. Create access privileges so that your colleague or accountant can login and work with your data online.
+      <br>
+      <button>Learn more</button>
+    </div>
+    <div class="image-div">
+      <img data-aos="fade-left" src="img/product_iteration.svg" alt="">
+    </div>
+   </div>
+    </section>
+
+    <section>
+      <div class="m-3 icons-div">
+        <div class="row">
+          <div class="col-sm-6 d-flex">
+            <img
+              src="img/ab1.jpg"
+              class="d-none d-sm-block m-auto w-100"
+              alt="img_div"
+            />
+          </div>
+          <div class="col-sm-6">
+            <div class="card bg -info">
+              <h3 class="text-center">Keep Records On</h3>
+              <div class="d-flex flex-wrap mt-3">
+                <div class="img-div">
+                  <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <div class="text-div">
+                  <div style="justify-items: center"><b>Finance</b></div>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
               </div>
-              <div class="text-div">
-                <div style="justify-items: center"><b>Finance</b></div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <!-- start -->
+              <div class="d-flex flex-wrap mt-3">
+                <div class="img-div">
+                  <i class="fas fa-briefcase" aria-hidden="true"></i>
+                </div>
+                <div class="text-div">
+                  <div style="justify-items: center"><b>Portfolio</b></div>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                  ad voluptates quam vitae
+                </div>
               </div>
+              <!-- end -->
+              <!-- start -->
+              <div class="d-flex flex-wrap mt-3">
+                <div class="img-div">
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="text-div">
+                  <div style="justify-items: center"><b>Projects</b></div>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                  ad voluptates quam vitae
+                </div>
+              </div>
+              <!-- end -->
+              <!-- start -->
+              <div class="d-flex flex-wrap mt-3">
+                <div class="img-div">
+                  <i class="fas fa-link"></i>
+                </div>
+                <div class="text-div">
+                  <div style="justify-items: center"><b>Social Links</b></div>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                  ad voluptates quam vitae
+                </div>
+              </div>
+              <!-- end -->
             </div>
-            <!-- start -->
-            <div class="d-flex flex-wrap mt-3">
-              <div class="img-div">
-                <i class="fas fa-briefcase" aria-hidden="true"></i>
-              </div>
-              <div class="text-div">
-                <div style="justify-items: center"><b>Portfolio</b></div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-                ad voluptates quam vitae
-              </div>
-            </div>
-            <!-- end -->
-            <!-- start -->
-            <div class="d-flex flex-wrap mt-3">
-              <div class="img-div">
-                <i class="fas fa-project-diagram"></i>
-              </div>
-              <div class="text-div">
-                <div style="justify-items: center"><b>Projects</b></div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-                ad voluptates quam vitae
-              </div>
-            </div>
-            <!-- end -->
-            <!-- start -->
-            <div class="d-flex flex-wrap mt-3">
-              <div class="img-div">
-                <i class="fas fa-link"></i>
-              </div>
-              <div class="text-div">
-                <div style="justify-items: center"><b>Social Links</b></div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-                ad voluptates quam vitae
-              </div>
-            </div>
-            <!-- end -->
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="footer bg-info">
-      <div class="me-auto p-2 logo" style="font-family: 'Roboto', sans-serif">
-        <i class="fab fa-accusoft"></i>
-        Mi Record &copy; 2021
+    </section>
+    <section>
+      <div class="footer bg-info">
+        <div class="me-auto p-2 logo" style="font-family: 'Roboto', sans-serif">
+          <i class="fab fa-accusoft"></i>
+          Mi Record &copy; 2021
+        </div>
       </div>
-      <!-- <div class="container">
-        <b>Navigation</b>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li> <a href="reg.html">Sign up</a></li>
-          <li> <a href="login.html">Sign in</a></li>
-        </ul>
-      </div> -->
-    </div>
-    <!-- <div class="carousel">
-      <div class="carousel__slide">
-        <img src="img/Timeline.svg" alt="">
-      </div>
-      <div class="carousel__slide">
-        <img src="img/Timeline.svg" alt="">
-        
-      </div>
-      <div class="carousel__slide">
-        <img src="img/Timeline.svg" alt="">
-
-      </div>
-    </div>
-    <div id="myCarousel" class="carousel">
-      <div class="carousel__slide">
-        <img data-lazy-src="img/Timeline.svg" />
-      </div>
-      <div class="carousel__slide">
-        <img data-lazy-src="img/Timeline.svg" />
-      </div>
-      <div class="carousel__slide">
-        <img data-lazy-src="img/Timeline.svg" />
-      </div>
-    </div> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      const myCarousel = new Carousel(document.querySelector(".carousel"), {
-  slides: [
-    {
-      html: "1",
-    },
-    {
-      html: "2",
-    },
-    {
-      html: "3",
-    },
-  ],
-});
-    </script> -->
-    <script src="js/animate.js"></script>
+      AOS.init();
+    </script>
   </body>
 </html>
