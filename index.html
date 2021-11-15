@@ -177,6 +177,7 @@ margin: auto 10px;
   .manage-div{
 /* flex-direction: ; */
 flex-wrap: wrap;
+padding:30px 0 0 0 ;
 }
   .manage-div img{
 width: 50vw;
@@ -186,7 +187,7 @@ border-right: solid #ddd;
 }
 }
 </style>
-   <div class="d-flex flex-w rap manage-div">
+   <div data-aos="zoom-in" class="d-flex flex-w rap manage-div">
     <div class="text-div" data-aos="zoom-in">
       <h3>Work from anywhere on multiple devices</h3>
       Access and manage your books from your computer, laptop, tablet, or smartphone anytime you choose. Create access privileges so that your colleague or accountant can login and work with your data online.
@@ -204,15 +205,18 @@ border-right: solid #ddd;
         <div class="row">
           <div class="col-sm-6 d-flex">
             <img
+            data-aos="fade-right"
               src="img/ab1.jpg"
               class="d-none d-sm-block m-auto w-100"
               alt="img_div"
             />
           </div>
           <div class="col-sm-6 text-center">
-            <div class="card bg -info">
+            <div class="card bg -info" data-aos="fade-left">
               <h3 class="text-center">Keep Records On</h3>
-              <div class="d-flex flex-wrap mt-3">
+              <style></style>
+              <!-- start -->
+              <div data-aos="zoom-in" class="d-flex flex-wrap mt-3">
                 <div class="img-div">
                   <i class="fas fa-hand-holding-usd"></i>
                 </div>
@@ -221,8 +225,9 @@ border-right: solid #ddd;
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </div>
               </div>
+              <!-- end -->
               <!-- start -->
-              <div class="d-flex flex-wrap mt-3">
+              <div data-aos="zoom-in" class="d-flex flex-wrap mt-3">
                 <div class="img-div">
                   <i class="fas fa-briefcase" aria-hidden="true"></i>
                 </div>
@@ -234,7 +239,7 @@ border-right: solid #ddd;
               </div>
               <!-- end -->
               <!-- start -->
-              <div class="d-flex flex-wrap mt-3">
+              <div data-aos="zoom-in" class="d-flex flex-wrap mt-3">
                 <div class="img-div">
                   <i class="fas fa-project-diagram"></i>
                 </div>
@@ -246,7 +251,7 @@ border-right: solid #ddd;
               </div>
               <!-- end -->
               <!-- start -->
-              <div class="d-flex flex-wrap mt-3">
+              <div data-aos="zoom-in" class="d-flex flex-wrap mt-3">
                 <div class="img-div">
                   <i class="fas fa-link"></i>
                 </div>
@@ -261,6 +266,62 @@ border-right: solid #ddd;
           </div>
         </div>
       </div>
+    </section>
+    <section class="features">
+      <style>
+        .features {
+          flex-wrap: wrap;
+        }
+        .features .card
+        {
+          width:300px;
+          /* height: 200px; */
+          /* border: none; */
+          display: flex;
+          /* justify-content: ; */
+          flex-direction: row;
+        }
+        .features .card i{
+          font-size: 50px;
+          margin: auto 10px;
+        }
+        .features .card span{
+          font-size: 20px;
+          font-weight: bold;
+          text-decoration: double;
+        }
+      </style>
+      <h3 data-aos="zoom-in" class="text-center">
+        Features of Mi Records
+      </h3>
+      <!-- <div class="d-flex flex-wrap justify-content-around"> -->
+        <div class="d-flex flex-wrap justify-content-around">
+          <div data-aos="zoom-in" class="card text-center m-3 p-1">
+           <i class="fas fa-pen"></i>
+          <div>
+             <span class="mt-1"> Recode</span>
+           QuickBooks Online keeps everything in its right place.
+          </div>
+          </div>
+          <div data-aos="zoom-in" class="card text-center m-3 p-1">
+           <i class="fas fa-save"></i>
+          <div>
+             <span class="mt-1"></span>
+           QuickBooks Online keeps everything in its right place, so you’ll always have
+          </div>
+          </div>
+          <div data-aos="zoom-in" class="card text-center m-3 p-1">
+           <i class="fas fa-edit"></i>
+          <div>
+             <span class="mt-1"> Edit</span>
+           QuickBooks Online keeps everything in its right place, so you’ll always have
+          </div>
+          </div>
+         
+       
+        </div>
+             
+      <!-- </div> -->
     </section>
     <section>
       <div class="footer bg-info">
