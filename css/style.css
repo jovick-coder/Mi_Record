@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+nav {
+  position: absolute;
+  top: 10px;
+  width: 96%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+nav ul a:hover {
+  border-bottom: 3px solid;
+  transition: all ease-in 0.5s;
+}
+#hero-section {
+  background: url('/img/hero-bg.jpg');
+  height: 100vh;
+  width: 100%;
+  /* background-position: 0%; */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media screen and (max-width: 829px) {
+  #hero-section {
+    background-size: 1000px;
+  }
+  /* } */
+}
+@media screen and (max-width: 425px) {
+  #hero-section {
+    background-size: 1000px;
+    background-position: left !important;
+  }
+}
+.text-over-image {
+  /* position: absolute; */
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.text-over-image button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.535);
+}
+.text-over-image button:hover {
+  background-color: rgb(250, 250, 250);
+  /* content: '>>>'; */
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.761);
+}
+.text-over-image button:active {
+  /* content: '>>>'; */
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.322);
+}
+
+/* === Login page === */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  font-size: 20px;
+  border: solid;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+.back-btn a {
+  text-decoration: none;
+  color: black;
+}
+.back-btn:hover {
+  background-color: #fff;
+}
+.main-div {
+  display: flex;
+  width: 100%;
+}
+.main-div .image-div {
+  background: url('/img/sub-bg.jpg');
+  height: 100vh;
+  width: 50%;
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main-div .form-div {
+  height: 100vh;
+  width: 50%;
+  background-color: rgb(0, 167, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-div .form-div .input-div {
+  /* border: solid 1px; */
+  background-color: #fff;
+  margin: 20px 0;
+  width: 300px;
+  display: flex;
+}
+.main-div .form-div .input-div label {
+  margin: auto;
+}
+.main-div .form-div .input-div input {
+  padding: 10px;
+  border: none;
+}
+.main-div .form-div .input-div input {
+  padding: 10px;
+  /* border: none; */
+  /* border: solid 1px red; */
+  width: 245px;
+}
+.main-div .form-div button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+}
+.main-div .form-div input.focus-visible {
+  outline: none;
+}
