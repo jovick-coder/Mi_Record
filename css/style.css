@@ -166,6 +166,12 @@ nav ul a:hover {
   height: 50px;
   top: 0;
   width: 100%;
+  display: flex;
+}
+.logo {
+  margin: auto 10px;
+  margin-right: auto;
+  font-size: 25px;
 }
 .page-body-wrapper {
   margin-top: 50px;
@@ -195,7 +201,7 @@ nav ul a:hover {
   text-decoration: none;
   font-weight: 700;
 }
-.page-body-wrapper .side-nav ul li i,
+/* .page-body-wrapper .side-nav ul li i, */
 .page-body-wrapper .side-nav ul li a {
   padding: 0 10px;
   color: rgb(72, 72, 72);
@@ -204,7 +210,6 @@ nav ul a:hover {
   display: flex;
   align-items: center;
 }
-.page-body-wrapper .side-nav ul li i:hover,
 .page-body-wrapper .side-nav ul li a:hover {
   color: rgb(126, 126, 126);
 }
@@ -213,6 +218,8 @@ nav ul a:hover {
   width: 55px;
   height: 55px;
   justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .page-body-wrapper main {
   margin-left: 160px;
@@ -221,10 +228,17 @@ nav ul a:hover {
 }
 .mobile-menu-btn {
   display: none;
+  margin: auto 15px;
 }
 @media screen and (max-width: 768px) {
   .mobile-menu-btn {
+    margin: auto 15px;
     display: inline-block;
+  }
+  .logo {
+    margin: auto 15px;
+    margin-right: auto;
+    font-size: 20px;
   }
   .page-body-wrapper main {
     margin-left: 55px;
