@@ -173,10 +173,10 @@ nav ul a:hover {
   position: relative;
 }
 .page-body-wrapper .side-nav {
-  width: 200px;
+  width: auto;
   height: 100%;
   font-weight: 900;
-  border: solid;
+  /* border: solid; */
   left: 0;
 }
 .page-body-wrapper .side-nav ul {
@@ -191,17 +191,18 @@ nav ul a:hover {
 
 .page-body-wrapper .side-nav ul li a {
   /* border: solid; */
-  display: inline-block;
   width: 100%;
   text-decoration: none;
   font-weight: 700;
 }
 .page-body-wrapper .side-nav ul li i,
 .page-body-wrapper .side-nav ul li a {
-  padding: 10px;
+  padding: 0 10px;
   color: rgb(72, 72, 72);
   cursor: pointer;
   font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 .page-body-wrapper .side-nav ul li i:hover,
 .page-body-wrapper .side-nav ul li a:hover {
@@ -209,9 +210,26 @@ nav ul a:hover {
 }
 .page-body-wrapper .side-nav ul li i {
   /* border: solid; */
-  display: inline-block;
+  width: 55px;
+  height: 55px;
+  justify-content: center;
 }
 .page-body-wrapper main {
-  margin-left: 200px;
+  margin-left: 160px;
+  width: 100%;
   height: 3000vh;
+}
+.mobile-menu-btn {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mobile-menu-btn {
+    display: inline-block;
+  }
+  .page-body-wrapper main {
+    margin-left: 55px;
+    width: 100%;
+    height: 3000vh;
+    padding-left: 5px;
+  }
 }
