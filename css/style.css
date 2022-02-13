@@ -336,6 +336,8 @@ nav ul a:hover {
 }
 .full-main-card {
   max-width: 1000px;
+  height: 500px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   .main-card {
