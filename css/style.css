@@ -171,10 +171,18 @@ nav ul a:hover {
 .logo {
   margin: auto 10px;
   margin-right: auto;
-  font-size: 25px;
+  font-size: 20px;
 }
-#min-nav {
-  cursor: pointer;
+.top-nav i {
+  margin: auto 15px;
+}
+.mobile-menu-btn {
+  display: none;
+  margin: auto 15px;
+}
+#desktop-menu-btn {
+  margin: auto 15px;
+  display: inline-block;
 }
 .page-body-wrapper {
   margin-top: 50px;
@@ -232,14 +240,13 @@ nav ul a:hover {
 .page-body-wrapper main .row {
   --bs-gutter-x: 0;
 }
-.mobile-menu-btn {
-  display: none;
-  margin: auto 15px;
-}
 @media screen and (max-width: 768px) {
   .mobile-menu-btn {
     margin: auto 15px;
     display: inline-block;
+  }
+  #desktop-menu-btn {
+    display: none;
   }
   .logo {
     margin: auto 15px;
