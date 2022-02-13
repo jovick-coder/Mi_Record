@@ -20,7 +20,7 @@ minNav.addEventListener('click', () => {
       const navLink = navLinks[i]
       navLink.style.display = 'flex'
     }
-    sideNav.style.width = 'auto'
+    sideNav.style.width = '200px'
     // mainDashboardPage.style.marginLeft = '160px'
     openNav = 1
   }
