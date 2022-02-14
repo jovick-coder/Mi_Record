@@ -283,6 +283,7 @@ footer {
   max-width: 400px;
   margin: 10px auto;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.322);
+  position: relative;
 }
 @media screen and (max-width: 1024px) {
   .main-card {
@@ -311,17 +312,27 @@ footer {
   border: none;
   border-radius: 0px 20px;
 }
-.dashbord-todo-col {
+.dashbord-todo-col .main-card {
+  /* background-color: #fff; */
+  /* margin: 10px; */
+  /* height: 3px; */
+  /* overflow: hidden; */
+  /* position: relative; */
+  padding-bottom: 10px;
+}
+.dashbord-todo-col .todo-div {
   background-color: #fff;
   margin: 10px;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-}
-.list-item {
-  max-height: 250px;
+  height: 255px;
+  margin-bottom: 60px;
   overflow: hidden;
   overflow-y: scroll;
+  /* position: relative; */
+}
+.list-item {
+  /* max-height: 250px; */
+  /* overflow: hidden;
+  overflow-y: scroll; */
   padding: 0;
 }
 .list-item li {
@@ -334,15 +345,26 @@ footer {
 }
 .list-item li span {
   margin: auto 20px;
+  padding: 0;
+}
+.list-item li input[type='checkbox'] {
+  margin: auto 5px;
+}
+.form-check-label {
+  display: inline-flex;
+}
+.form-check-label input {
+  margin: auto;
 }
 .dashbord-todo-send-form {
   display: flex;
   border-top: 1px solid #000;
   padding: 10px;
   /* margin: 0 10px; */
-  background-color: rgb(237 237 237 / 49%);
+  /* background-color: rgb(237 237 237 / 49%); */
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
+  right: 0;
   width: 100%;
 }
 .dashbord-todo-send-form input {

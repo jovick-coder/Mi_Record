@@ -36,7 +36,7 @@
     <div class="top-nav">
         <div class="logo">
             <span class="fab fa-accusoft">Mi_Records</span>
-            <i class="fas fa-ellipsis-v" id="desktop-menu-btn"></i>
+            <i class="fas fa-ellipsis-h" id="desktop-menu-btn"></i>
         </div>
         <i class="fas fa-bell"></i>
         <i class="fas fa-cogs"></i>
@@ -47,7 +47,8 @@
     <div class="page-body-wrapper">
         <div class="side-nav">
             <ul>
-                <li><a href=""><i class="fas fa-tachometer-alt"></i> <span class="nav-link-name"> Dashboard</span></a>
+                <li><a href="" class="active"><i class="fas fa-tachometer-alt"></i> <span class="nav-link-name">
+                            Dashboard</span></a>
                 </li>
                 <li><a href="#"> <i class="far fa-calendar-alt"></i> <span class="nav-link-name">Riminder</span></a>
                 </li>
@@ -77,73 +78,46 @@
                     <div class="main-card text-center">
                         <b><i class="fas fa-tasks"></i> Tesk</b>
                         <p>200</p>
-                        <button class="btn btn-success"> <i class="fas fa-edit"></i> Update</button>
+                        <button class="btn"> <i class="fas fa-edit"></i> Update</button>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="main-card text-center">
                         <b><i class="fas fa-project-diagram"></i> Projects</b>
                         <p>200</p>
-                        <button class="btn btn-success"> <i class="fas fa-edit"></i> Update</button>
+                        <button class="btn"> <i class="fas fa-edit"></i> Update</button>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="main-card text-center">
                         <b> <i class="fas fa-coins"></i> Finance</b>
                         <p>200</p>
-                        <button class="btn btn-success"> <i class="fas fa-edit"></i> Update</button>
+                        <button class="btn"> <i class="fas fa-edit"></i> Update</button>
                     </div>
                 </div>
 
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 dashbord-todo-col">
                     <div class="main-card">
                         <b> <i class="fas fa-clipboard-list"></i> Todos</b>
-                        <div class="dashbord-todo-col">
+                        <div class="todo-div">
                             <ol class="list-item">
+
                                 <li>
-                                    <span>item</span>
+                                    <span class="form-check form-check-flat">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Todo Item
+                                        </label>
+                                    </span>
+                                    <!-- <span>item</span> -->
                                     <span class="icon-set">
-                                        <input type="checkbox" name="" id="">
+                                        <!-- <input type="checkbox" name="" id=""> -->
                                         <i class="fas fa-trash"></i>
                                     </span>
                                 </li>
-                                <li>
-                                    <span>item</span>
-                                    <span class="icon-set">
-                                        <input type="checkbox" name="" id="">
-                                        <i class="fas fa-trash"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>item</span>
-                                    <span class="icon-set">
-                                        <input type="checkbox" name="" id="">
-                                        <i class="fas fa-trash"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>item</span>
-                                    <span class="icon-set">
-                                        <input type="checkbox" name="" id="">
-                                        <i class="fas fa-trash"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>item22</span>
-                                    <span class="icon-set">
-                                        <input type="checkbox" name="" id="">
-                                        <i class="fas fa-trash"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>item233</span>
-                                    <span class="icon-set">
-                                        <input type="checkbox" name="" id="">
-                                        <i class="fas fa-trash"></i>
-                                    </span>
-                                </li>
+
                             </ol>
                             <div class="dashbord-todo-send-form">
                                 <input type="text" placeholder="Add Todo"> <button><i
@@ -176,6 +150,10 @@
                             </li>
                             <li>
                                 <span><i class="fab fa-youtube"></i> Youtube</span>
+                                <span class="icon-set"><i class="far fa-clipboard"></i></span>
+                            </li>
+                            <li>
+                                <span><i class="fab fa-github"></i> GitHub</span>
                                 <span class="icon-set"><i class="far fa-clipboard"></i></span>
                             </li>
 
