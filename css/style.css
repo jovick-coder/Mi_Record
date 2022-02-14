@@ -159,6 +159,12 @@ nav ul a:hover {
   outline: none;
 }
 @media screen and (max-width: 730px) {
+  .back-btn {
+    top: 38px;
+    font-size: 16px;
+    border: solid;
+    padding: 5px 8px;
+  }
   .main-div {
     min-height: 100vh;
     overflow: hidden;
@@ -178,6 +184,9 @@ nav ul a:hover {
     width: 100%;
     display: flex;
   }
+  .main-div .form-div .input-div i {
+    padding: 0 5px;
+  }
   .main-div .image-div {
     width: 100%;
     height: 100vh;
@@ -193,10 +202,6 @@ nav ul a:hover {
 
   .main-div .image-div {
     width: 500px;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 }
 
