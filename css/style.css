@@ -17,9 +17,11 @@ nav {
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 0;
 }
-
+nav span {
+  padding: 0 10px;
+}
 nav ul {
   list-style: none;
   padding: 0;
@@ -46,20 +48,32 @@ nav ul a:hover {
   height: 100vh;
   width: 100%;
   /* background-position: 0%; */
+  background-position: top !important;
   background-size: 100%;
+  /* background-size: 2000px; */
   background-repeat: no-repeat;
   position: relative;
 }
+@media screen and (min-width: 1024px) {
+  #hero-section {
+    background-size: 1500px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #hero-section {
+    background-size: 3000px;
+  }
+}
+
 @media screen and (max-width: 829px) {
   #hero-section {
-    background-size: 1000px;
+    background-size: 1500px;
   }
   /* } */
 }
 @media screen and (max-width: 425px) {
   #hero-section {
-    background-size: 1000px;
-    background-position: left !important;
+    background-size: 1500px;
   }
 }
 .text-over-image {
