@@ -155,6 +155,9 @@ nav ul a:hover {
   margin-top: 10px;
   border: none;
 }
+.main-div .form-div a {
+  color: #ddd;
+}
 .main-div .form-div input.focus-visible {
   outline: none;
 }
