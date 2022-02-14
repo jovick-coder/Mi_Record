@@ -1,3 +1,7 @@
+:root {
+  --main-color: rgb(0, 167, 204);
+  --primary-color: rgb(53, 53, 53);
+}
 body {
   margin: 0;
   padding: 0;
@@ -119,7 +123,7 @@ nav ul a:hover {
 .main-div .form-div {
   height: 100vh;
   width: 50%;
-  background-color: rgb(0, 167, 204);
+  background-color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,11 +162,13 @@ nav ul a:hover {
 /* === Dashboard === */
 .top-nav,
 .page-body-wrapper .side-nav {
-  background: #ddd;
+  background: var(--main-color);
   position: fixed;
   z-index: 2;
 }
 .top-nav {
+  background-color: var(--primary-color);
+  color: #fff;
   height: 70px;
   top: 0;
   width: 100%;
@@ -215,14 +221,16 @@ nav ul a:hover {
 /* .page-body-wrapper .side-nav ul li i, */
 .page-body-wrapper .side-nav ul li a {
   padding: 0 10px;
-  color: rgb(72, 72, 72);
+  color: #fff;
   cursor: pointer;
   font-size: 16px;
   display: flex;
   align-items: center;
 }
-.page-body-wrapper .side-nav ul li a:hover {
-  color: rgb(126, 126, 126);
+.page-body-wrapper .side-nav ul li a.active,
+.page-body-wrapper .side-nav ul li a:hover,
+.page-body-wrapper .side-nav ul li a:focus {
+  color: var(--primary-color);
 }
 .page-body-wrapper .side-nav ul li i {
   /* border: solid; */
@@ -287,15 +295,21 @@ footer {
 .top-card .main-card {
   max-width: 200px;
 }
+.top-card .btn {
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 10px;
+}
 .main-card p {
   margin: 5px 0;
 }
 .report-btn {
   color: #fff;
-  background-color: blue;
+  background-color: var(--main-color);
   padding: 10px 20px;
   border: none;
-  border-radius: 10px 20px;
+  border-radius: 0px 20px;
 }
 .dashbord-todo-col {
   background-color: #fff;
