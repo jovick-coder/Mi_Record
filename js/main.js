@@ -96,3 +96,38 @@ anychart.onDocumentLoad(function () {
   // initiate chart display
   chart.draw()
 })
+// ===== ToDo =====
+;(function ($) {
+  'use strict'
+  $(function () {
+    var todoListItem = $('#todo-list')
+    var todoListInput = $('#todo-list-input')
+    $('#todo-list-add-btn').on('click', function (event) {
+      event.preventDefault()
+
+      var item = $(this).prevAll('#todo-list-input').val()
+
+      if (item) {
+        var htmlTmp = ` <li>
+                            <span class="form-check form-check-flat">
+                                <label class="done-check">${item}
+                                    <input class='checkbox' type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </span>
+                                <i class="fas fa-trash remove"></i>
+                        </li>`
+        todoListItem.append(htmlTmp)
+        todoListInput.val('')
+      }
+    })
+
+    todoListItem.on('change', '.checkbox', function () {
+      $(this).closest('li').toggleClass('completed')
+    })
+    todoListItem.on('click', '.remove', function () {
+      console.log('hi')
+      $(this).parent().remove()
+    })
+  })
+})(jQuery)
