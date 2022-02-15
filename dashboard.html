@@ -105,29 +105,25 @@
                         <b> <i class="fas fa-clipboard-list"></i> Todos</b>
                         <div class="todo-div">
                             <ol class="list-item" id="todo-list">
+                                <li>
+                                    <span class="form-check form-check-flat">
+                                        <label class="done-check">Todo list now working
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </span>
+                                    <i class="fas fa-trash remove"></i>
+                                </li>
+                                <li>
+                                    <span class="form-check form-check-flat">
+                                        <label class="done-check">CheckOut
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </span>
+                                    <i class="fas fa-trash remove"></i>
+                                </li>
 
-                                <li>
-                                    <span class="form-check form-check-flat">
-                                        <label class="done-check">One
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </span>
-                                    <span class="icon-set">
-                                        <i class="fas fa-trash trash-todo"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span class="form-check form-check-flat">
-                                        <label class="done-check">One
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </span>
-                                    <span class="icon-set">
-                                        <i class="fas fa-trash trash-todo"></i>
-                                    </span>
-                                </li>
 
                             </ol>
                             <form action="" class="dashbord-todo-send-form">
@@ -197,101 +193,46 @@
     <footer class="text-center text-muted my-2">
         footer text
     </footer>
-    <script src="js/jquery//jquery.min.js"></script>
+    <script src="js/jquery/jquery.min.js"></script>
     <script>
-        // (function ($) {
-        //     'use strict';
-        //     $(function () {
-        //         var todoListItem = $('.todo-list');
-        //         var todoListInput = $('.todo-list-input');
-        //         $('.todo-list-add-btn').on("click", function (event) {
-        //             event.preventDefault();
+        (function ($) {
+            'use strict';
+            $(function () {
+                var todoListItem = $('#todo-list');
+                var todoListInput = $('#todo-list-input');
+                $('#todo-list-add-btn').on("click", function (event) {
+                    event.preventDefault();
 
-        //             var item = $(this).prevAll('.todo-list-input').val();
-        //             console.log(todoListInput[0].value);
-        //             console.log(item);
-        //             // if (item) {
-        //             //     var htmlTmp = ` <li>
-        //             //                 <span class="form-check form-check-flat">
-        //             //                     <label class="done-check">${item}
-        //             //                         <input class='checkbox' type="checkbox">
-        //             //                         <span class="checkmark"></span>
-        //             //                     </label>
-        //             //                 </span>
-        //             //                 <span class="icon-set">
-        //             //                     <i class="fas fa-trash remove"></i>
-        //             //                 </span>
-        //             //             </li>`
-        //             //     todoListItem.append(htmlTmp);
-        //             //     todoListInput.val("");
-        //             // }
+                    var item = $(this).prevAll('#todo-list-input').val();
 
-        //         });
+                    if (item) {
+                        var htmlTmp = ` <li>
+                                    <span class="form-check form-check-flat">
+                                        <label class="done-check">${item}
+                                            <input class='checkbox' type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </span>
+                                        <i class="fas fa-trash remove"></i>
+                                </li>`
+                        todoListItem.append(htmlTmp);
+                        todoListInput.val("");
+                    }
 
-        //         todoListItem.on('change', '.checkbox', function () {
-        //             if ($(this).attr('checked')) {
-        //                 $(this).removeAttr('checked');
-        //             } else {
-        //                 $(this).attr('checked', 'checked');
-        //             }
+                });
 
-        //             $(this).closest("li").toggleClass('completed');
+                todoListItem.on('change', '.checkbox', function () {
 
-        //         });
+                    $(this).closest("li").toggleClass('completed');
 
-        //         todoListItem.on('click', '.remove', function () {
-        //             $(this).parent().remove();
-        //         });
+                });
+                todoListItem.on('click', '.remove', function () {
+                    console.log('hi');
+                    $(this).parent().remove();
+                });
 
-        //     });
-        // })(jQuery);
-    </script>
-
-    <script>
-        var dashbordTodoSendForm = document.querySelector('.dashbord-todo-send-form')
-        var todoList = document.querySelector('#todo-list')
-        var todoListInput = document.querySelector('#todo-list-input')
-        var todoListAddBtn = document.querySelector('#todo-list-add-btn')
-
-        todoListInput.addEventListener('click', () => {
-            todoListInput.style.border = 'none'
-            todoListInput.style.borderBottom = 'solid 1px'
-            todoListInput.placeholder = 'Add Todo'
-        })
-
-        dashbordTodoSendForm.addEventListener('submit', (e) => {
-            e.preventDefault()
-            // console.log();
-            if (todoListInput.value) {
-                let todo = todoListInput.value
-                addTodoList(todo)
-                todoListInput.value = ''
-            } else {
-                // console.log('not fill');
-                todoListInput.style.border = 'solid red 1px'
-                todoListInput.placeholder = 'Input a Todo'
-            }
-        })
-
-        let addTodoList = (todo) => {
-            console.log(todo, 'added');
-
-            htmlTmp = ` <li>
-                        <span class="form-check form-check-flat">
-                            <label class="done-check">${todo}
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                        </span>
-                        <span class="icon-set">
-                            <i class="fas fa-trash trash-todo"></i>
-                        </span>
-                    </li>
-`
-            todoList.innerHTML += htmlTmp
-        }
-
-
+            });
+        })(jQuery);
     </script>
     <script src="js/main.js"></script>
 </body>
