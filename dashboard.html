@@ -8,7 +8,8 @@
     <link rel="icon" type="image/png" href="/favicon-32x32.png">
     <title>Mi Records</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
+    <!-- <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script> -->
+    <script src="js/chat.js" type="text/javascript"></script>
     <!-- <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
     <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
     <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
@@ -185,45 +186,7 @@
     </footer>
 
     <script>
-        anychart.onDocumentLoad(function () {
-            // create an instance of a pie chart
-            var chart = anychart.bar();
-            // set chart title
-            chart.title("Project Report")
-            // data array
-            const projectData = [
-                ["pending", 5],
-                ["In Progress", 2],
-                ["Complected", 10],]
-            // set the data
-            chart.data(projectData);
 
-            // set the container element 
-            chart.container("container-project");
-            // initiate chart display
-            chart.draw();
-        });
-        anychart.onDocumentLoad(function () {
-            // create an instance of a pie chart
-            var chart = anychart.pie3d();
-            // set chart title
-            chart.title("Finance Report")
-                // set chart radius
-                .radius('43%');
-            // data array
-            const projectData = [
-                ["buget", 5000],
-                ["Income", 10000],
-                ["Expensise", 4000]
-            ]
-            // set the data
-            chart.data(projectData);
-
-            // set the container element 
-            chart.container("container-finance");
-            // initiate chart display
-            chart.draw();
-        });
     </script>
     <script src="js/main.js"></script>
 </body>
