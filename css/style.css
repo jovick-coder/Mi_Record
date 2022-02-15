@@ -414,9 +414,10 @@ footer {
   height: 50px;
 }
 .list-item li:hover {
-  background-color: rgb(249 249 249);
+  /* background-color: rgb(249 249 249); */
 }
-.list-item li span {
+.list-item li span,
+.list-item li i {
   margin: auto 5px;
   padding: 0;
 }
@@ -544,4 +545,11 @@ footer {
     margin: 10px 15px;
     max-width: none;
   }
+}
+
+.completed {
+  font-weight: bolder;
+  text-decoration: line-through;
+  text-decoration-color: var(--main-color);
+  /* background-color: var(--main-fade); */
 }
