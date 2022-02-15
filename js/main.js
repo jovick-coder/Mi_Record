@@ -84,7 +84,7 @@ anychart.onDocumentLoad(function () {
     .radius('43%')
   // data array
   const projectData = [
-    ['buget', 5000],
+    ['budget', 5000],
     ['Income', 10000],
     ['Expensise', 4000],
   ]
