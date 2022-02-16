@@ -63,6 +63,11 @@ setTimeout(() => {
   }, 5000)
 }, 2000)
 
+let closeNotification = document.getElementsByClassName('close-notification')
+closeNotification[0].addEventListener('click', () => {
+  notificationDiv[0].style.width = '0px'
+})
+
 // ====== Chat ======
 
 anychart.onDocumentLoad(function () {
