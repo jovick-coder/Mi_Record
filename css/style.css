@@ -553,3 +553,49 @@ footer {
   text-decoration-color: var(--main-color);
   /* background-color: var(--main-fade); */
 }
+/*  ====== Reminder ======*/
+
+.time {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.hms {
+  font-size: 50px;
+  font-weight: 200;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.322);
+}
+
+.ampm {
+  font-size: 20px;
+}
+
+.date {
+  font-size: 16px;
+}
+.top-nav-time {
+  /* display: flex;
+  flex-direction: column; */
+}
+.top-nav-time .time {
+  /* color: red; */
+  color: var(--main-color);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.322);
+}
+.top-nav-time .hms {
+  font-size: 20px;
+  font-weight: 900;
+}
+.top-nav-time .ampm {
+  font-size: 8px;
+}
+.top-nav-time .date {
+  font-size: 10px;
+}
+.hms,
+.ampm,
+.date {
+  /* margin: auto 0; */
+  padding: 0;
+  margin: 0;
+}
