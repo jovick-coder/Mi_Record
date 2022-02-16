@@ -2,6 +2,7 @@
   --main-color: rgb(0, 167, 204);
   --main-fade: rgb(0, 167, 204, 0.5);
   --primary-color: rgb(53, 53, 53);
+  --notification-indecator-color: transparent;
 }
 body {
   margin: 0;
@@ -263,7 +264,7 @@ nav ul a:hover {
   margin-left: -5px;
   top: 0;
   /* remove the color then use js to added it when they is notification */
-  background-color: var(--main-color);
+  background-color: var(--notification-indecator-color);
   border-radius: 50%;
 }
 .mobile-menu-btn {
