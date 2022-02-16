@@ -50,13 +50,14 @@
             </ul>
         </div>
         <main class="main-dashboard-page">
+            <!-- Notification pop up -->
             <div class="notification-div">
                 <i class="fa fa-times close-notification" aria-hidden="true"></i>
                 <div class="notification-message">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 </div>
-
             </div>
+            <!-- Notification pop up end -->
             <div class="row my-4">
                 <div class="col-md-12 d-flex justify-content-around">
                     <div class="my-auto">
@@ -85,19 +86,16 @@
                 </div>
                 <div class="col-md-6"></div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-card">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     <script>
-
-        let notificationDiv = document.getElementsByClassName('notification-div')
-        setTimeout(() => {
-            notificationDiv[0].style.width = '80%'
-
-            setTimeout(() => {
-                notificationDiv[0].style.width = '0px'
-            }, 5000)
-
-        }, 2000)
 
         let closeNotification = document.getElementsByClassName('close-notification')
         closeNotification[0].addEventListener(

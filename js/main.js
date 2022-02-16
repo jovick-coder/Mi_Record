@@ -53,6 +53,16 @@ mobileMenuBtn.addEventListener('click', () => {
   }
 })
 
+// ====== Notification pop up ======
+let notificationDiv = document.getElementsByClassName('notification-div')
+setTimeout(() => {
+  notificationDiv[0].style.width = '80%'
+
+  setTimeout(() => {
+    notificationDiv[0].style.width = '0px'
+  }, 5000)
+}, 2000)
+
 // ====== Chat ======
 
 anychart.onDocumentLoad(function () {

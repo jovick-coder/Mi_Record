@@ -274,6 +274,29 @@ nav ul a:hover {
   margin: auto 15px;
   display: inline-block;
 }
+/* Notification pop up */
+.notification-div {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 5px solid var(--main-fade);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100px;
+  max-width: 300px;
+  transition: width ease-in-out 0.5s;
+  overflow: hidden;
+  z-index: 1000;
+}
+.notification-div .notification-message,
+.notification-div .close-notification {
+  color: #ddd;
+  margin: 5px;
+}
+/* .notification-div .message {
+} */
+/* Notification pop up end */
+
 .page-body-wrapper {
   margin-top: 70px;
   display: flex;
