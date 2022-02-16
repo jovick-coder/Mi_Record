@@ -72,6 +72,12 @@ let notificationDiv = document.getElementsByClassName('notification-div')
 setTimeout(() => {
   notificationDiv[0].style.width = '80%'
 
+  // add indecator color to notification icon
+  document.documentElement.style.setProperty(
+    '--notification-indecator-color',
+    'var(--main-color)',
+  )
+  // -----------------------------------------
   setTimeout(() => {
     notificationDiv[0].style.width = '0px'
   }, 5000)
