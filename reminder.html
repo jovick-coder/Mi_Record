@@ -1,0 +1,163 @@
+<!-- frame -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Record</title>
+    <script src="js/chat.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="assets/fontawesome-icons/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="logo">
+            <span class="fab fa-accusoft">Mi_Records</span>
+            <i class="fas fa-ellipsis-h" id="desktop-menu-btn"></i>
+        </div>
+        <div class="top-nav-time d-none d-sm-inline-flex ">
+            <div class="time d-flex">
+                <span class="hms m-auto"></span>
+                <span class="ampm m-auto"></span>
+            </div>
+        </div>
+        <i class="fas fa-bell notification-icon"></i>
+        <i class="fas fa-cogs"></i>
+        <i class="fas fa-align-left mobile-menu-btn" id="mobile-menu-btn"></i>
+
+    </div>
+
+    <div class="page-body-wrapper">
+        <div class="side-nav">
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> <span class="nav-link-name">
+                            Dashboard</span></a>
+                </li>
+                <li><a href="reminder.html"> <i class="far fa-calendar-alt"></i> <span
+                            class="nav-link-name">Riminder</span></a>
+                </li>
+                <li><a href="#"> <i class="fas fa-coins"></i> <span class="nav-link-name">Finance</span></a></li>
+                <li><a href="#"> <i class="fas fa-project-diagram"></i> <span class="nav-link-name">Projects</span></a>
+                </li>
+                <li><a href="#"> <i class="fas fa-server"></i> <span class="nav-link-name">Portfolio</span></a></li>
+                <li><a href="#"> <i class="fas fa-link"></i> <span class="nav-link-name">social Link</span></a></li>
+                <li><a href="login.html"> <i class="fas fa-sign-out-alt"></i> <span
+                            class="nav-link-name">Logout</span></a></li>
+            </ul>
+        </div>
+        <main class="main-dashboard-page">
+            <div class="row my-4">
+                <div class="col-md-12 d-flex justify-content-around">
+                    <div class="my-auto">
+                        <span class="d-none d-sm-inline">
+                            Victor Josiah
+                        </span>
+                        Reminder
+
+                    </div>
+                    <div>
+                        <button class="report-btn"><i class="fas fa-file-pdf"></i> Report</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-card">
+                        <div class="time">
+                            <span class="hms"></span>
+                            <span class="ampm"></span>
+                            <br>
+                            <span class="date"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </main>
+    </div>
+    <script>
+        function updateTime() {
+            var dateInfo = new Date();
+
+            /* time */
+            var hr,
+                _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
+                sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
+                ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM";
+
+            // replace 0 with 12 at midnight, subtract 12 from hour if 13–23
+            if (dateInfo.getHours() == 0) {
+                hr = 12;
+            } else if (dateInfo.getHours() > 12) {
+                hr = dateInfo.getHours() - 12;
+            } else {
+                hr = dateInfo.getHours();
+            }
+
+            var currentTime = hr + ":" + _min + ":" + sec;
+            // print time
+            // let hmsm = document.getElementsByClassName("hms")
+            // let ampmm = document.getElementsByClassName("ampm")
+            document.getElementsByClassName("hms")[0].innerHTML = currentTime;
+            document.getElementsByClassName("ampm")[0].innerHTML = ampm;
+            document.getElementsByClassName("hms")[1].innerHTML = currentTime;
+            document.getElementsByClassName("ampm")[1].innerHTML = ampm;
+            // for (let i = 0; i < hmsm.length; i++) {
+            //     const e = hms[i];
+            //     e.innerHTML = currentTime
+            // }
+            // for (let i = 0; i < ampmm.length; i++) {
+            //     const e = hms[i];
+            //     e.innerHTML = ampm
+            // }
+
+            /* date */
+            var dow = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+                month = [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                    "August",
+                    "September",
+                    "October",
+                    "November",
+                    "December"
+                ],
+                day = dateInfo.getDate();
+
+            // store date
+            var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + " " + day;
+
+            document.getElementsByClassName("date")[0].innerHTML = currentDate;
+        };
+
+        // print time and date once, then update them every second
+        updateTime();
+        setInterval(function () {
+            updateTime()
+        }, 1000);
+    </script>
+
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
