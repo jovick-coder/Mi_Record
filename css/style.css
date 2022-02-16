@@ -251,6 +251,21 @@ nav ul a:hover {
 .top-nav i {
   margin: auto 15px;
 }
+.notification-icon {
+  position: relative;
+}
+.notification-icon::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-top: -1px;
+  margin-left: -5px;
+  top: 0;
+  /* remove the color then use js to added it when they is notification */
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
 .mobile-menu-btn {
   display: none;
   margin: auto 15px;
