@@ -85,7 +85,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6"></div>
+                <!-- count down clock -->
+                <div class="col-md-6">
+                    <div class="main-card count-down-main-card">
+
+                        <div class="count-down-time-div">
+                            <h1 id="headline">New Year Countdown</h1>
+                            <div id="countdown" class="m-auto">
+                                <ul>
+                                    <li><span id="days"></span>days</li>
+                                    <li><span id="hours"></span>Hours</li>
+                                    <li><span id="minutes"></span>Minutes</li>
+                                    <li><span id="seconds"></span>Seconds</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -159,6 +175,38 @@
         setInterval(function () {
             updateTime()
         }, 1000);
+
+
+
+        // count down time
+
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+
+            let gmonth = 'jan'
+            let gday = '01'
+            let gyear = '2023'
+            let gtime = '00:00:00'
+
+            let countTill = `${gmonth} ${gday} , ${gyear} ${gtime}`,
+                // let newyear = "April 12, 2001 00:00:00",
+                countDown = new Date(countTill).getTime(),
+                x = setInterval(function () {
+
+                    let now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                }, 0)
+        }());
     </script>
 
 

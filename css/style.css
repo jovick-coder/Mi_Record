@@ -643,3 +643,62 @@ footer {
   padding: 0;
   margin: 0;
 }
+/* ------------------------------------------------------------- */
+/* ====== count down ====== */
+
+.count-down-main-card {
+  max-width: none;
+  margin-right: 25px;
+}
+.count-down-time-div {
+  color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.count-down-time-div h1 {
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.count-down-time-div ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.count-down-time-div li {
+  font-size: 16px;
+  list-style-type: none;
+  padding: 4px 7px;
+  text-transform: uppercase;
+}
+
+.count-down-time-div li span {
+  display: block;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+@media all and (max-width: 881px) {
+  .count-down-main-card {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+@media all and (max-width: 768px) {
+  .count-down-time-div h1 {
+    font-size: 20px;
+  }
+
+  .count-down-time-div li {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .count-down-time-div li span {
+    font-size: 18px;
+  }
+}
