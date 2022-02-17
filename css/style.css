@@ -417,12 +417,17 @@ footer {
 .main-card p {
   margin: 5px 0;
 }
-.report-btn {
+.fancy-btn {
   color: #fff;
   background-color: var(--main-color);
   padding: 10px 20px;
   border: none;
   border-radius: 0px 20px;
+}
+@media screen and (max-width: 370px) {
+  .fancy-btn.long-text {
+    padding: 8px 8px;
+  }
 }
 .dashbord-todo-col .main-card {
   /* background-color: #fff; */
