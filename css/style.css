@@ -45,7 +45,7 @@ nav ul a:hover {
   transition: all ease-in 0.5s;
 }
 #hero-section {
-  background: url('../img/hero-bg.jpg');
+  background: url('../img/hero-bg.webp');
   height: 100vh;
   width: 100%;
   /* background-position: 0%; */
@@ -133,7 +133,7 @@ nav ul a:hover {
   width: 100%;
 }
 .main-div .image-div {
-  background: url('/img/sub-bg.jpg');
+  background: url('/img/sub-bg.webp');
   height: 100vh;
   width: 50%;
   background-position: 100%;
@@ -150,7 +150,8 @@ nav ul a:hover {
   align-items: center;
   flex-direction: column;
 }
-.form-div .input-div {
+.form-div .input-div,
+.todo-form .textarea-div {
   /* border: solid 1px; */
   background-color: #fff;
   margin: 20px 0;
@@ -161,10 +162,7 @@ nav ul a:hover {
   margin: auto;
 }
 .form-div .input-div input {
-  padding: 10px;
   border: none;
-}
-.form-div .input-div input {
   padding: 10px;
   /* border: none; */
   /* border: solid 1px red; */
@@ -179,6 +177,7 @@ nav ul a:hover {
 .form-div a {
   color: #ddd;
 }
+.form-div textarea.focus-visible,
 .form-div input.focus-visible {
   outline: none;
 }
@@ -702,3 +701,43 @@ footer {
     font-size: 18px;
   }
 }
+/* --------------------------------------------------------- */
+/* Reminder todo */
+
+/* .form-div.todo-form {
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+}
+.form-div.todo-form .textarea-div textarea {
+  border: none;
+  padding: 10px;
+  width: 245px;
+}
+.form-div .textarea-div .text-arear-lable {
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 408px) {
+  .form-div.todo-form {
+    width: auto;
+    position: static;
+    z-index: 1;
+  }
+  .form-div.todo-form .input-div,
+  .form-div.todo-form .textarea-div {
+    /* border: solid 1px; * /
+    /* margin: 0; * /
+    width: 200px;
+    display: flex;
+  }
+  .form-div.todo-form .input-div input,
+  .form-div.todo-form .textarea-div textarea {
+    border: none;
+    padding: 10px;
+    /* border: none; */
+/* border: solid 1px rgb(255 0 0); * /
+    width: 100%;
+    max-width: 170px;
+  }
+} */
