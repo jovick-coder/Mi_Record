@@ -573,9 +573,11 @@ footer {
 }
 .full-main-card {
   max-width: 1000px;
+  margin: 15px auto;
+}
+.chat-row .full-main-card {
   height: 500px;
   padding-bottom: 50px;
-  margin: 15px auto;
 }
 footer {
   font-size: 10px;
@@ -587,6 +589,31 @@ footer {
   .full-main-card {
     margin: 10px 15px;
     max-width: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-card {
+    max-width: 280px;
+  }
+  .full-main-card {
+    margin: 10px 5px 10px 0;
+    max-width: none;
+  }
+  .full-main-card {
+    margin: 15px auto;
+  }
+  .chat-row .full-main-card {
+    height: 300px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .full-main-card {
+    margin: 15px auto;
+  }
+  .chat-row .full-main-card {
+    height: 250px;
+    padding-bottom: 50px;
   }
 }
 
@@ -704,7 +731,7 @@ footer {
 /* --------------------------------------------------------- */
 /* Reminder todo */
 
-/* .form-div.todo-form {
+.form-div.todo-form {
   height: auto;
   width: 100%;
   background-color: transparent;
@@ -726,9 +753,9 @@ footer {
   }
   .form-div.todo-form .input-div,
   .form-div.todo-form .textarea-div {
-    /* border: solid 1px; * /
-    /* margin: 0; * /
-    width: 200px;
+    /* border: solid 1px; */
+    /* margin: 0; */
+    width: 233px;
     display: flex;
   }
   .form-div.todo-form .input-div input,
@@ -736,8 +763,31 @@ footer {
     border: none;
     padding: 10px;
     /* border: none; */
-/* border: solid 1px rgb(255 0 0); * /
+    /* border: solid 1px rgb(255 0 0); */
+    width: 100%;
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form-div.todo-form {
+    width: auto;
+    position: static;
+    z-index: 1;
+  }
+  .form-div.todo-form .input-div,
+  .form-div.todo-form .textarea-div {
+    /* border: solid 1px; */
+    /* margin: 0; */
+    width: 230px;
+    display: flex;
+  }
+  .form-div.todo-form .input-div input,
+  .form-div.todo-form .textarea-div textarea {
+    border: none;
+    padding: 10px;
+    /* border: none; */
+    /* border: solid 1px rgb(255 0 0); */
     width: 100%;
     max-width: 170px;
   }
-} */
+}
