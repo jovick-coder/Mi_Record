@@ -141,7 +141,7 @@ nav ul a:hover {
   background-repeat: no-repeat;
   position: relative;
 }
-.main-div .form-div {
+.form-div {
   height: 100vh;
   width: 50%;
   background-color: var(--main-color);
@@ -150,36 +150,36 @@ nav ul a:hover {
   align-items: center;
   flex-direction: column;
 }
-.main-div .form-div .input-div {
+.form-div .input-div {
   /* border: solid 1px; */
   background-color: #fff;
   margin: 20px 0;
   width: 300px;
   display: flex;
 }
-.main-div .form-div .input-div label {
+.form-div .input-div label {
   margin: auto;
 }
-.main-div .form-div .input-div input {
+.form-div .input-div input {
   padding: 10px;
   border: none;
 }
-.main-div .form-div .input-div input {
+.form-div .input-div input {
   padding: 10px;
   /* border: none; */
   /* border: solid 1px red; */
   width: 245px;
 }
-.main-div .form-div button {
+.form-div button {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
   border: none;
 }
-.main-div .form-div a {
+.form-div a {
   color: #ddd;
 }
-.main-div .form-div input.focus-visible {
+.form-div input.focus-visible {
   outline: none;
 }
 @media screen and (max-width: 730px) {
@@ -193,7 +193,7 @@ nav ul a:hover {
     min-height: 100vh;
     overflow: hidden;
   }
-  .main-div .form-div {
+  .form-div {
     width: 100%;
     position: absolute;
     top: 0;
@@ -201,14 +201,14 @@ nav ul a:hover {
     z-index: 2;
     background-color: var(--main-fade);
   }
-  .main-div .form-div .input-div {
+  .form-div .input-div {
     /* border: solid 1px; */
     background-color: #fff;
     margin: 20px 0;
     width: 100%;
     display: flex;
   }
-  .main-div .form-div .input-div i {
+  .form-div .input-div i {
     padding: 0 5px;
   }
   .main-div .image-div {
