@@ -104,38 +104,41 @@
    <div class="row">
     <div class="col-12">
      <div class="main-card full-main-card">
-      <b><i class="far fa-calendar-alt" aria-hidden="true"></i> Todos form</b>
+      <b><i class="far fa-calendar-alt" aria-hidden="true"></i> Task form</b>
       <div class="row">
        <div class="col-md-6">
         <div class="form-div todo-form">
          <form action="">
           <div class="input-div">
-           <label for="action-name"><i class="fas fa-user-tag"></i></label>
-           <input type="text" id="action-name" placeholder="Action Name">
+           <label for="task-name"><i class="fas fa-user-tag"></i></label>
+           <input type="text" id="task-name" placeholder="Task Name">
 
           </div>
           <div class="textarea-div">
            <label for="password" class="text-arear-lable"><i class="fas fa-sticky-note"></i></label>
-           <textarea name="" id="discribtion" cols="30" rows="3" placeholder="Discribtion"></textarea>
+           <textarea name="" id="discribtion" cols="30" rows="3" placeholder="Task Discribtion"></textarea>
           </div>
-          <div>
-           <input type="checkbox" name="" id=""> Remeber Me
+          <sub class="m-0">Task Dead Line</sub>
+          <div class="input-div mt-0">
+           <label for="task-name"><i class="fas fa-calendar-day"></i></label>
+           <input type="datetime-local" id="task-name" placeholder="Dead Line">
+
           </div>
           <div>
            <button>
-            <i class="fas fa-unlock-alt"></i>
-            Login</button>
+            <i class="fas fa-paper-plane"></i>
+            Add Tesk</button>
           </div>
          </form>
         </div>
        </div>
        <div class="col-md-6">
-        <b class="d-block my-2"> <i class="fas fa-clipboard-list"></i> Todos</b>
-        <div class="reminder-todo-div">
+        <b class="d-block my-2"> <i class="fas fa-tasks"></i> Tasks</b>
+        <div class="reminder-task-div">
          <ul>
-          <li class="todo-list">
-           <b>Action Name</b>
-           <p>Action Discribtion</p>
+          <li class="task-list">
+           <b>Task Name</b>
+           <p>Task Discribtion</p>
            <span class="d-flex justify-content-between">
             <i><b>set :</b> Date</i>
             <i><b>dead line :</b> Date</i>
@@ -145,9 +148,9 @@
             <i class="fas fa-trash"></i>
            </div>
           </li>
-          <li class="todo-list">
-           <b>Action Name</b>
-           <p>Action Discribtion</p>
+          <li class="task-list">
+           <b>Task Name</b>
+           <p>Task Discribtion</p>
            <span class="d-flex justify-content-between">
             <i><b>set :</b> Date</i>
             <i><b>dead line :</b> Date</i>
