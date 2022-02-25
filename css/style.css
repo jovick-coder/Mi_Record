@@ -142,6 +142,10 @@ nav ul a:hover {
   position: relative;
 }
 .form-div {
+  /* border: solid; */
+  padding: 0 20px;
+}
+.form-div.login-form {
   height: 100vh;
   width: 50%;
   background-color: var(--main-color);
@@ -149,25 +153,34 @@ nav ul a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0;
 }
 .form-div .input-div,
-.todo-form .textarea-div {
+.task-form .textarea-div,
+.form-div button {
+  margin: 20px 0;
+}
+.form-div .input-div,
+.task-form .textarea-div {
+  /* margin: 20px;/ */
   /* border: solid 1px; */
   background-color: #fff;
-  margin: 20px 0;
-  width: 300px;
+  /* width: 300px; */
   display: flex;
 }
 .form-div .input-div label {
-  margin: auto;
+  margin: auto 10px;
 }
+.form-div .textarea-div .text-arear-lable {
+  margin: 10px;
+}
+.form-div .textarea-div textarea,
 .form-div .input-div input {
   border: none;
   padding: 10px;
-  /* border: none; */
-  /* border: solid 1px red; */
-  width: 245px;
+  width: 100%;
 }
+
 .form-div button {
   width: 100%;
   padding: 10px;
@@ -179,7 +192,7 @@ nav ul a:hover {
 }
 .form-div textarea.focus-visible,
 .form-div input.focus-visible {
-  outline: none;
+  /* outline: none; */
 }
 @media screen and (max-width: 730px) {
   .back-btn {
@@ -192,7 +205,7 @@ nav ul a:hover {
     min-height: 100vh;
     overflow: hidden;
   }
-  .form-div {
+  .form-div.login-form {
     width: 100%;
     position: absolute;
     top: 0;
@@ -456,9 +469,9 @@ footer {
   justify-content: space-between;
   height: 50px;
 }
-.list-item li:hover {
-  /* background-color: rgb(249 249 249); */
-}
+/* .list-item li:hover { */
+/* background-color: rgb(249 249 249); */
+/* } */
 .list-item li span,
 .list-item li i {
   margin: auto 5px;
@@ -643,10 +656,10 @@ footer {
 .date {
   font-size: 16px;
 }
-.top-nav-time {
-  /* display: flex;
+/* .top-nav-time { */
+/* display: flex;
   flex-direction: column; */
-}
+/* } */
 .top-nav-time .time {
   /* color: red; */
   color: var(--main-color);
@@ -731,35 +744,27 @@ footer {
 /* --------------------------------------------------------- */
 /* Reminder todo */
 
-.form-div.todo-form {
+.form-div.task-form {
   height: auto;
   width: 100%;
   background-color: transparent;
 }
-.form-div.todo-form .textarea-div textarea {
-  border: none;
-  padding: 10px;
-  width: 245px;
-}
-.form-div .textarea-div .text-arear-lable {
-  margin: 10px auto;
-}
 
 @media screen and (max-width: 408px) {
-  .form-div.todo-form {
+  .form-div.task-form {
     width: auto;
     position: static;
     z-index: 1;
   }
-  .form-div.todo-form .input-div,
-  .form-div.todo-form .textarea-div {
+  .form-div.task-form .input-div,
+  .form-div.task-form .textarea-div {
     /* border: solid 1px; */
     /* margin: 0; */
     width: 233px;
     display: flex;
   }
-  .form-div.todo-form .input-div input,
-  .form-div.todo-form .textarea-div textarea {
+  .form-div.task-form .input-div input,
+  .form-div.task-form .textarea-div textarea {
     border: none;
     padding: 10px;
     /* border: none; */
@@ -769,20 +774,20 @@ footer {
   }
 }
 @media screen and (max-width: 320px) {
-  .form-div.todo-form {
+  .form-div.task-form {
     width: auto;
     position: static;
     z-index: 1;
   }
-  .form-div.todo-form .input-div,
-  .form-div.todo-form .textarea-div {
+  .form-div.task-form .input-div,
+  .form-div.task-form .textarea-div {
     /* border: solid 1px; */
     /* margin: 0; */
     width: 230px;
     display: flex;
   }
-  .form-div.todo-form .input-div input,
-  .form-div.todo-form .textarea-div textarea {
+  .form-div.task-form .input-div input,
+  .form-div.task-form .textarea-div textarea {
     border: none;
     padding: 10px;
     /* border: none; */
@@ -792,6 +797,7 @@ footer {
   }
 }
 /* reminder todo div */
+.reminder-event-div,
 .reminder-task-div {
   /* border: solid 1px; */
   background-color: #fff;
@@ -799,21 +805,25 @@ footer {
   height: 300px;
   overflow-y: scroll;
 }
+.reminder-event-div ul,
 .reminder-task-div ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+.reminder-event-div ul .event-list,
 .reminder-task-div ul .task-list {
   position: relative;
   margin: 10px 0;
   border-bottom: 1px solid var(--main-color);
 }
+.reminder-event-div ul .event-list .icon-div,
 .reminder-task-div ul .task-list .icon-div {
   position: absolute;
   top: 0;
   right: 0;
 }
+.reminder-event-div ul .event-list .icon-div i,
 .reminder-task-div ul .task-list .icon-div i {
   padding: 5px;
 }
