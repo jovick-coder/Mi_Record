@@ -1,0 +1,98 @@
+<!-- frame -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Record</title>
+    <script src="js/chat.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="assets/fontawesome-icons/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="logo">
+            <span class="fab fa-accusoft">Mi_Records</span>
+            <i class="fas fa-ellipsis-h" id="desktop-menu-btn"></i>
+        </div>
+        <div class="top-nav-time d-none d-sm-inline-flex ">
+            <div class="time d-flex">
+                <span class="hms m-auto"></span>
+                <span class="ampm m-auto"></span>
+            </div>
+        </div>
+        <i class="fas fa-bell notification-icon"></i>
+        <i class="fas fa-cogs"></i>
+        <i class="fas fa-align-left mobile-menu-btn" id="mobile-menu-btn"></i>
+
+    </div>
+
+
+    <div class="page-body-wrapper">
+        <div class="side-nav">
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> <span class="nav-link-name">
+                            Dashboard</span></a>
+                </li>
+                <li><a href="reminder.html"> <i class="far fa-calendar-alt"></i> <span
+                            class="nav-link-name">Riminder</span></a>
+                </li>
+                <li><a href="#" class="active"> <i class="fas fa-coins"></i> <span
+                            class="nav-link-name">Finance</span></a></li>
+                <li><a href="#"> <i class="fas fa-project-diagram"></i> <span class="nav-link-name">Projects</span></a>
+                </li>
+                <li><a href="#"> <i class="fas fa-server"></i> <span class="nav-link-name">Portfolio</span></a></li>
+                <li><a href="#"> <i class="fas fa-link"></i> <span class="nav-link-name">social Link</span></a></li>
+                <li><a href="login.html"> <i class="fas fa-sign-out-alt"></i> <span
+                            class="nav-link-name">Logout</span></a></li>
+            </ul>
+        </div>
+        <main class="main-dashboard-page">
+            <!-- Notification pop up -->
+            <div class="notification-div">
+                <i class="fa fa-times close-notification" aria-hidden="true"></i>
+                <div class="notification-message">
+                    Urgent Notification pop up
+                </div>
+            </div>
+            <!-- Notification pop up end -->
+            <div class="row my-4">
+                <div class="col-md-12 d-flex justify-content-around">
+                    <div class="my-auto">
+                        <span class="d-none d-sm-inline">
+                            Victor Josiah
+                        </span>
+                        Finance
+
+                    </div>
+                    <div>
+                        <button class="fancy-btn long-text"><i class="fas fa-coins"></i> Finance Report
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-card full-main-card">
+                        <b>
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                            Finance Report Form
+                        </b>
+                        <div class="form-div">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
