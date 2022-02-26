@@ -75,23 +75,85 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="main-card full-main-card">
-                        <b>
-                            <i class="fa fa-list" aria-hidden="true"></i>
-                            Finance Report Form
-                        </b>
-                        <div class="form-div">
+            <div class="main-card full-main-card">
+                <b>
+                    Finance Report Form
+                </b>
+                <div class="float-end top-form">
+                    <label>
+                        Calculate tithe
+                        <input type="checkbox" name="" id="tithe-checkbox">
+                    </label>
+                    <label>
+                        <input type="number" name="" id="finance-saving" placeholder="Input Income Savings">
+                    </label>
+                </div>
+                <div class="row w-100">
+                    <div class="col-md-8">
+                        <div class="form-div dashboard-form finance-form">
+                            <div id="finance-message">
+                            </div>
+                            <form action="">
+                                <div class="input-div category-div">
+                                    <label>
+                                        <input type="radio" name="Category" id="category-Income"
+                                            onchange="categoryCheck('Income')">
+                                        Income
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="Category" id="category-Expensise"
+                                            onchange="categoryCheck('Expensise')">
+                                        Expensise
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="Category" id="category-Budget"
+                                            onchange="categoryCheck('Budget')">
+                                        Budget
+                                    </label>
 
+                                </div>
+                                <div class="input-div">
+                                    <label for="finance-name"><i class="fas fa-user-tag"></i></label>
+                                    <input type="text" id="finance-name" placeholder="Record Name">
+
+                                </div>
+
+                                <label>
+                                    <input type="checkbox" id="default-finance-name" placeholder="Record Name">
+                                    Default : <span id="defaultRecordName"></span>
+                                </label>
+
+                                <div class="input-div">
+                                    <label for="finance-amount"><i class="fas fa-file-invoice-dollar"></i></label>
+                                    <input type="number" id="finance-amount" placeholder="Amount">
+
+                                </div>
+                                <div>
+                                    <button id="finance-calculator" class="form-btn">
+                                        <i class="fas fa-calculator"></i>
+                                        Calculate
+                                    </button>
+                                    <sup>Click to Calculate Finance</sup>
+                                </div>
+                            </form>
                         </div>
+                    </div>
+                    <div class="col-md-4 pt-3">
+                        <b><i class="fa fa-calculator" aria-hidden="true"></i> Calculated Figure</b>
+                        <p id="note-message"></p>
+                        <ul id="list-ul">
+
+                        </ul>
+                        <button id="submit-finance" class="finance-submit-button" disabled>
+                            <i class="fas fa-paper-plane"></i>
+                            Submit
+                        </button>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
-    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/finance.js"></script>
     <script src="js/main.js"></script>
 </body>
 

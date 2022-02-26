@@ -155,13 +155,18 @@ nav ul a:hover {
   flex-direction: column;
   padding: 0;
 }
-.form-div .input-div,
-.task-form .textarea-div,
+/* .form-div .input-div,
+.dashboard-form .textarea-div,
 .form-div button {
   margin: 20px 0;
+} */
+.dashboard-form.finance-form .input-div,
+.dashboard-form.finance-formbutton,
+.dashboard-form.finance-form .textarea-div {
+  margin: 20px 0 3px 0;
 }
 .form-div .input-div,
-.task-form .textarea-div {
+.dashboard-form .textarea-div {
   /* margin: 20px;/ */
   /* border: solid 1px; */
   background-color: #fff;
@@ -179,13 +184,28 @@ nav ul a:hover {
   border: none;
   padding: 10px;
   width: 100%;
+  outline: none;
+}
+.form-div .input-div input[type='radio'] {
+  width: auto;
+  /* padding: 10px 1px; */
+}
+.input-div.category-div label {
+  margin: 15px 10px;
+  /* display: block;   */
 }
 
-.form-div button {
+.form-div .form-btn,
+.finance-submit-button {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
   border: none;
+  color: white;
+  background-color: var(--main-color);
+}
+.finance-submit-button:disabled {
+  background-color: var(--main-fade);
 }
 .form-div a {
   color: #ddd;
@@ -744,27 +764,27 @@ footer {
 /* --------------------------------------------------------- */
 /* Reminder todo */
 
-.form-div.task-form {
+.form-div.dashboard-form {
   height: auto;
   width: 100%;
   background-color: transparent;
 }
 
 @media screen and (max-width: 408px) {
-  .form-div.task-form {
+  .form-div.dashboard-form {
     width: auto;
     position: static;
     z-index: 1;
   }
-  .form-div.task-form .input-div,
-  .form-div.task-form .textarea-div {
+  .form-div.dashboard-form .input-div,
+  .form-div.dashboard-form .textarea-div {
     /* border: solid 1px; */
     /* margin: 0; */
     width: 233px;
     display: flex;
   }
-  .form-div.task-form .input-div input,
-  .form-div.task-form .textarea-div textarea {
+  .form-div.dashboard-form .input-div input,
+  .form-div.dashboard-form .textarea-div textarea {
     border: none;
     padding: 10px;
     /* border: none; */
@@ -774,26 +794,26 @@ footer {
   }
 }
 @media screen and (max-width: 320px) {
-  .form-div.task-form {
+  .form-div.dashboard-form {
     width: auto;
     position: static;
     z-index: 1;
   }
-  .form-div.task-form .input-div,
-  .form-div.task-form .textarea-div {
+  .form-div.dashboard-form .input-div,
+  .form-div.dashboard-form .textarea-div {
     /* border: solid 1px; */
     /* margin: 0; */
     width: 230px;
     display: flex;
   }
-  .form-div.task-form .input-div input,
-  .form-div.task-form .textarea-div textarea {
+  .form-div.dashboard-form .input-div input,
+  .form-div.dashboard-form .textarea-div textarea {
     border: none;
     padding: 10px;
     /* border: none; */
     /* border: solid 1px rgb(255 0 0); */
     width: 100%;
-    max-width: 170px;
+    /* max-width: 170px; */
   }
 }
 /* reminder todo div */
