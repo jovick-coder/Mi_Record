@@ -307,6 +307,11 @@ nav ul a:hover {
   margin: auto 15px;
   display: inline-block;
 }
+/* top text */
+.head-text {
+  font-size: 16px;
+  font-weight: bold;
+}
 /* Notification pop up */
 .notification-div {
   background-color: rgba(0, 0, 0, 0.5);
