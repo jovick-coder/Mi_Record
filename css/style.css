@@ -612,6 +612,17 @@ footer {
   height: 500px;
   padding-bottom: 50px;
 }
+.chat-row #container-project,
+.chat-row #container-finance {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-row path[fill='#ffffff'] {
+  display: none;
+}
 footer {
   font-size: 10px;
 }
@@ -846,4 +857,17 @@ footer {
 .reminder-event-div ul .event-list .icon-div i,
 .reminder-task-div ul .task-list .icon-div i {
   padding: 5px;
+}
+/*  */
+.history-list {
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.history-list .record {
+  height: 50px;
+  margin: 10px 0;
+  overflow: hidden;
+  cursor: pointer;
+  border-bottom: var(--main-color) solid 1px;
 }

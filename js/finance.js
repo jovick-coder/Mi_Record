@@ -143,3 +143,21 @@ document.querySelector('#finance-calculator').addEventListener('click', (e) => {
   financeMessage.innerHTML = ''
   calculateFinance(selectedCategory, financeName.value, financeAmount.value)
 })
+
+// history List Record
+const historyListRecord = document.querySelectorAll('.history-list>.record')
+historyListRecord.forEach((hs) =>
+  hs.addEventListener('click', function (e) {
+    const element = e.target
+    let show = element.getAttribute('show')
+    if (show === null) {
+      element.setAttribute('show', 'true')
+      element.style.height = 'auto'
+      element.style.overflow = 'null'
+    } else {
+      element.removeAttribute('show')
+      element.style.height = '50px'
+      element.style.overflow = 'hidden'
+    }
+  }),
+)
