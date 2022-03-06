@@ -145,19 +145,58 @@ document.querySelector('#finance-calculator').addEventListener('click', (e) => {
 })
 
 // history List Record
+
+const historyListRecordObject = [
+  {
+    Category: 'Income',
+    Name: 'New Income',
+    Amount: '2000',
+    Tithe: '200',
+    Savings: '200',
+  },
+  {
+    Category: 'Income2',
+    Name: 'New Income',
+    Amount: '2000',
+    Tithe: '200',
+    Savings: '200',
+  },
+]
+const historyList = document.querySelector('.history-list')
 const historyListRecord = document.querySelectorAll('.history-list>.record')
-historyListRecord.forEach((hs) =>
-  hs.addEventListener('click', function (e) {
-    const element = e.target
-    let show = element.getAttribute('show')
-    if (show === null) {
-      element.setAttribute('show', 'true')
-      element.style.height = 'auto'
-      element.style.overflow = 'null'
-    } else {
-      element.removeAttribute('show')
-      element.style.height = '50px'
-      element.style.overflow = 'hidden'
-    }
-  }),
-)
+function mapRecord() {
+  historyListRecordObject.map((record) => {
+    console.log(record)
+    const { Category, Name, Amount, Tithe, Savings } = record
+    const htmlTmp = `
+  <div class="record">
+  <b>Category: </b> ${Category}<br>
+  <b> Name: </b> ${Name}<br>
+  <b> Amount: </b> ${Amount}<br>
+  <b> Tithe : </b> ${Tithe}<br>
+  <b> Savings : </b> ${Savings}<br>
+</div>
+  `
+
+    historyList.innerHTML += htmlTmp
+  })
+  getRecords()
+}
+mapRecord()
+function getRecords() {
+  historyListRecord.forEach((history) =>
+    history.addEventListener('click', function (e) {
+      const element = e.target
+      let show = element.getAttribute('show')
+      if (show === null) {
+        element.setAttribute('show', 'true')
+        element.style.height = 'auto'
+        element.style.overflow = 'null'
+      } else {
+        element.removeAttribute('show')
+        element.style.height = '50px'
+        element.style.overflow = 'hidden'
+      }
+    }),
+  )
+}
