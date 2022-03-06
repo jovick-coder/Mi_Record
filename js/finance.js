@@ -161,9 +161,15 @@ const historyListRecordObject = [
     Tithe: '200',
     Savings: '200',
   },
+  {
+    Category: 'Income3',
+    Name: 'New Income',
+    Amount: '2000',
+    Tithe: '200',
+    Savings: '200',
+  },
 ]
 const historyList = document.querySelector('.history-list')
-const historyListRecord = document.querySelectorAll('.history-list>.record')
 function mapRecord() {
   historyListRecordObject.map((record) => {
     console.log(record)
@@ -184,6 +190,7 @@ function mapRecord() {
 }
 mapRecord()
 function getRecords() {
+  const historyListRecord = document.querySelectorAll('.history-list>.record')
   historyListRecord.forEach((history) =>
     history.addEventListener('click', function (e) {
       const element = e.target
