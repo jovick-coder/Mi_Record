@@ -3,178 +3,177 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Record/project</title>
-    <script src="js/chat.js" type="text/javascript" defer></script>
-    <link rel="stylesheet" href="assets/fontawesome-icons/css/all.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Record/project</title>
+  <script src="js/chat.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="assets/fontawesome-icons/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="top-nav">
-        <div class="logo">
-            <span class="fab fa-accusoft">Mi_Records</span>
-            <i class="fas fa-ellipsis-h" id="desktop-menu-btn"></i>
-        </div>
-        <div class="top-nav-time d-none d-sm-inline-flex ">
-            <div class="time d-flex">
-                <span class="hms m-auto"></span>
-                <span class="ampm m-auto"></span>
-            </div>
-        </div>
-        <i class="fas fa-bell notification-icon"></i>
-        <i class="fas fa-cogs"></i>
-        <i class="fas fa-align-left mobile-menu-btn" id="mobile-menu-btn"></i>
-
+  <div class="top-nav">
+    <div class="logo">
+      <span class="fab fa-accusoft">Mi_Records</span>
+      <i class="fas fa-ellipsis-h" id="desktop-menu-btn"></i>
     </div>
-
-
-    <div class="page-body-wrapper">
-        <div class="side-nav">
-            <ul>
-                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> <span class="nav-link-name">
-                            Dashboard</span></a>
-                </li>
-                <li><a href="reminder.html"> <i class="far fa-calendar-alt"></i> <span
-                            class="nav-link-name">Riminder</span></a>
-                </li>
-                <li><a href="finance.html"> <i class="fas fa-coins"></i> <span class="nav-link-name">Finance</span></a>
-                </li>
-                <li><a href="project.html" class="active"> <i class="fas fa-project-diagram"></i> <span
-                            class="nav-link-name">Projects</span></a>
-                </li>
-                <li><a href="#"> <i class="fas fa-server"></i> <span class="nav-link-name">Portfolio</span></a></li>
-                <li><a href="#"> <i class="fas fa-link"></i> <span class="nav-link-name">social Link</span></a></li>
-                <li><a href="login.html"> <i class="fas fa-sign-out-alt"></i> <span
-                            class="nav-link-name">Logout</span></a></li>
-            </ul>
-        </div>
-        <main class="main-dashboard-page">
-            <!-- Notification pop up -->
-            <div class="notification-div">
-                <i class="fa fa-times close-notification" aria-hidden="true"></i>
-                <div class="notification-message">
-                    Urgent Notification pop up
-                </div>
-            </div>
-            <!-- Notification pop up end -->
-            <div class="row my-4">
-                <div class="col-md-12 d-flex justify-content-around">
-                    <div class="my-auto">
-                        <span class="d-none d-sm-inline">
-                            Victor Josiah
-                        </span>
-                        <h1 class="head-text d-none d-sm-inline head-text">Projects</h1>
-
-                    </div>
-                    <div>
-                        <button class="fancy-btn long-text"><i class="fas fa-briefcase"></i> Projects Report
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="full-main-card main-card">
-                <b><i class="fas fa-folder-plus"></i> New Project</b>
-                <div class="row justify-content-around">
-                    <div class="col-sm-8">
-                        <div class="form-div dashboard-form">
-                            <form action="">
-                                <div class="input-div">
-                                    <label for="project-name"><i class="fas fa-user-tag"></i></label>
-                                    <input type="text" id="project-name" placeholder="Project Name">
-
-                                </div>
-                                <div class="textarea-div">
-                                    <label for="discribtion" class="text-arear-lable"><i
-                                            class="fas fa-sticky-note"></i></label>
-                                    <textarea name="" id="discribtion" cols="30" rows="3"
-                                        placeholder="Project Discribtion"></textarea>
-                                </div>
-                                <!-- <sub class="m-0">Task Dead Line</sub> -->
-                                <div class="input-div mt-0">
-                                    <label for="upload-date"><i class="fas fa-calendar-day"></i></label>
-                                    <input type="datetime-local" id="upload-date" placeholder="Dead Line">
-
-                                </div>
-                                <div class="input-div progress-div">
-                                    <label>
-                                        <input type="radio" name="progress" id="progress-Income">
-                                        Pennding
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="progress" id="progress-Expensise">
-                                        InProgress
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="progress" id="progress-Budget">
-                                        Completed
-                                    </label>
-
-                                </div>
-                                <div class="input-div">
-                                    <label for="git-link"><i class="fab fa-github"></i></label>
-                                    <input type="text" id="git-link" placeholder="GitHub Link">
-
-                                </div>
-                                <div class="input-div">
-                                    <label for="live-link"><i class="fas fa-link"></i></label>
-                                    <input type="text" id="live-link" placeholder="Live Link">
-
-                                </div>
-                                <div class="input-div image-upload" id="dropbox">
-                                    <label for="project-image">
-                                        <i class="fas fa-image">
-                                            <p>Click to Upload picture
-                                                <br>
-                                                OR
-                                                <br>
-                                                Drag & Drop
-                                            </p>
-                                        </i>
-                                    </label>
-                                    <input type="file" id="project-image" placeholder="project-image">
-                                </div>
-                                <div>
-                                    <button class="form-btn">
-                                        <i class="fas fa-paper-plane"></i>
-                                        Add Tesk</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <b><i class="fas fa-folder"></i> Projects</b>
-                    <div class="d-flex project-show">
-                        <div class="main-card">
-                            <div class="img-div">
-
-                                <img src="/assets/projects/sm.PNG" alt="">
-                            </div>
-                            <div class="text-div">
-                                <b>Name:</b> Project 1 <br>
-                                <b>Discribtion:</b>short note about project <br>
-                                <b>Duration:</b> Data till Date <br>
-                                <b>Proogress:</b> completed <br>
-                                <b>GitHub Link:</b> Data till Date <br>
-                                <b>Live Link:</b> Data till Date <br>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+    <div class="top-nav-time d-none d-sm-inline-flex ">
+      <div class="time d-flex">
+        <span class="hms m-auto"></span>
+        <span class="ampm m-auto"></span>
+      </div>
     </div>
+    <i class="fas fa-bell notification-icon"></i>
+    <i class="fas fa-cogs"></i>
+    <i class="fas fa-align-left mobile-menu-btn" id="mobile-menu-btn"></i>
 
-    <script src="js/project.js"></script>
-    <script src="js/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+  </div>
+
+
+  <div class="page-body-wrapper">
+    <div class="side-nav">
+      <ul>
+        <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> <span class="nav-link-name">
+              Dashboard</span></a>
+        </li>
+        <li><a href="reminder.html"> <i class="far fa-calendar-alt"></i> <span class="nav-link-name">Riminder</span></a>
+        </li>
+        <li><a href="finance.html"> <i class="fas fa-coins"></i> <span class="nav-link-name">Finance</span></a>
+        </li>
+        <li><a href="project.html" class="active"> <i class="fas fa-project-diagram"></i> <span
+              class="nav-link-name">Projects</span></a>
+        </li>
+        <li><a href="#"> <i class="fas fa-server"></i> <span class="nav-link-name">Portfolio</span></a></li>
+        <li><a href="#"> <i class="fas fa-link"></i> <span class="nav-link-name">social Link</span></a></li>
+        <li><a href="login.html"> <i class="fas fa-sign-out-alt"></i> <span class="nav-link-name">Logout</span></a></li>
+      </ul>
+    </div>
+    <main class="main-dashboard-page">
+      <!-- Notification pop up -->
+      <div class="notification-div">
+        <i class="fa fa-times close-notification" aria-hidden="true"></i>
+        <div class="notification-message">
+          Urgent Notification pop up
+        </div>
+      </div>
+      <!-- Notification pop up end -->
+      <div class="row my-4">
+        <div class="col-md-12 d-flex justify-content-around">
+          <div class="my-auto">
+            <span class="d-none d-sm-inline">
+              Victor Josiah
+            </span>
+            <h1 class="head-text d-none d-sm-inline head-text">Projects</h1>
+
+          </div>
+          <div>
+            <button class="fancy-btn long-text"><i class="fas fa-briefcase"></i> Projects Report
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="full-main-card main-card">
+        <b><i class="fas fa-folder-plus"></i> New Project</b>
+        <div class="row justify-content-around">
+          <div class="col-sm-8">
+            <div class="form-div dashboard-form">
+              <form action="" id="project-form">
+                <div class="input-div">
+                  <label for="project-name"><i class="fas fa-user-tag"></i></label>
+                  <input type="text" id="project-name" placeholder="Project Name">
+
+                </div>
+                <div class="textarea-div">
+                  <label for="discribtion" class="text-arear-lable"><i class="fas fa-sticky-note"></i></label>
+                  <textarea type="'text" name="" id="discribtion" cols="30" rows="3"
+                    placeholder="Project Discribtion"></textarea>
+                </div>
+                <!-- <sub class="m-0">Task Dead Line</sub> -->
+                <div class="input-div mt-0">
+                  <label for="upload-date"><i class="fas fa-calendar-day"></i></label>
+                  <input type="datetime-local" id="upload-date" placeholder="Dead Line">
+
+                </div>
+                <div class="input-div progress-div">
+                  <label>
+                    <input type="radio" class="progress-checkbox" name="progress" id="progress-Pending" value="Pending">
+                    Pending
+                  </label>
+                  <label>
+                    <input type="radio" class="progress-checkbox" name="progress" id="progress-InProgress"
+                      value="InProgress">
+                    InProgress
+                  </label>
+                  <label>
+                    <input type="radio" class="progress-checkbox" name="progress" id="progress-Completed"
+                      value="Completed">
+                    Completed
+                  </label>
+
+                </div>
+                <div class="input-div">
+                  <label for="git-link"><i class="fab fa-github"></i></label>
+                  <input type="text" id="git-link" placeholder="GitHub Link">
+
+                </div>
+                <div class="input-div">
+                  <label for="live-link"><i class="fas fa-link"></i></label>
+                  <input type="text" id="live-link" placeholder="Live Link">
+
+                </div>
+                <div class="input-div image-upload" id="dropbox">
+                  <label for="project-image">
+                    <i class="fas fa-image">
+                      <p>Click to Upload picture
+                        <br>
+                        OR
+                        <br>
+                        Drag & Drop
+                      </p>
+                    </i>
+                  </label>
+                  <input type="file" id="project-image" placeholder="project-image">
+                </div>
+                <div>
+                  <button type="submit" class="form-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Add Tesk</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <b><i class="fas fa-folder"></i> Projects</b>
+          <div class="d-flex project-show">
+            <div class="main-card">
+              <div class="img-div">
+
+                <img src="/assets/projects/sm.PNG" alt="">
+              </div>
+              <div class="text-div">
+                <b>Name:</b> Project 1 <br>
+                <b>Discribtion:</b>short note about project <br>
+                <b>Duration:</b> Data till Date <br>
+                <b>Proogress:</b> completed <br>
+                <b>GitHub Link:</b> Data till Date <br>
+                <b>Live Link:</b> Data till Date <br>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/project.js"></script>
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
