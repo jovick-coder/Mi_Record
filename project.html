@@ -78,24 +78,13 @@
             </div>
             <div class="full-main-card main-card">
                 <b><i class="fas fa-folder-plus"></i> New Project</b>
-                <div class="row">
-                    <div class="col-sm-5 project-form-image-div">
-                        <img src="assets/projects/lg1.png" alt="Project Image" class="project-form-image">
-                        <div class="about-project">
-                            <b>Name:</b> Project 1 <br>
-                            <b>Discribtion:</b>short note about project <br>
-                            <b>Duration:</b> Data till Date <br>
-                            <b>Proogress:</b> completed <br>
-                            <b>GitHub Link:</b> Data till Date <br>
-                            <b>Live Link:</b> Data till Date <br>
-                        </div>
-                    </div>
-                    <div class="col-sm-7">
+                <div class="row justify-content-around">
+                    <div class="col-sm-8">
                         <div class="form-div dashboard-form">
                             <form action="">
                                 <div class="input-div">
-                                    <label for="task-name"><i class="fas fa-user-tag"></i></label>
-                                    <input type="text" id="task-name" placeholder="Project Name">
+                                    <label for="project-name"><i class="fas fa-user-tag"></i></label>
+                                    <input type="text" id="project-name" placeholder="Project Name">
 
                                 </div>
                                 <div class="textarea-div">
@@ -106,21 +95,21 @@
                                 </div>
                                 <!-- <sub class="m-0">Task Dead Line</sub> -->
                                 <div class="input-div mt-0">
-                                    <label for="task-name"><i class="fas fa-calendar-day"></i></label>
-                                    <input type="datetime-local" id="task-name" placeholder="Dead Line">
+                                    <label for="upload-date"><i class="fas fa-calendar-day"></i></label>
+                                    <input type="datetime-local" id="upload-date" placeholder="Dead Line">
 
                                 </div>
-                                <div class="input-div category-div">
+                                <div class="input-div progress-div">
                                     <label>
-                                        <input type="radio" name="Category" id="category-Income">
+                                        <input type="radio" name="progress" id="progress-Income">
                                         Pennding
                                     </label>
                                     <label>
-                                        <input type="radio" name="Category" id="category-Expensise">
-                                        In Progress
+                                        <input type="radio" name="progress" id="progress-Expensise">
+                                        InProgress
                                     </label>
                                     <label>
-                                        <input type="radio" name="Category" id="category-Budget">
+                                        <input type="radio" name="progress" id="progress-Budget">
                                         Completed
                                     </label>
 
@@ -135,6 +124,19 @@
                                     <input type="text" id="live-link" placeholder="Live Link">
 
                                 </div>
+                                <div class="input-div image-upload" id="dropbox">
+                                    <label for="project-image">
+                                        <i class="fas fa-image">
+                                            <p>Click to Upload picture
+                                                <br>
+                                                OR
+                                                <br>
+                                                Drag & Drop
+                                            </p>
+                                        </i>
+                                    </label>
+                                    <input type="file" id="project-image" placeholder="project-image">
+                                </div>
                                 <div>
                                     <button class="form-btn">
                                         <i class="fas fa-paper-plane"></i>
@@ -148,6 +150,7 @@
         </main>
     </div>
 
+    <script src="js/project.js"></script>
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
