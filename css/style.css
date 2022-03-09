@@ -167,7 +167,7 @@ nav ul a:hover {
 }
 .form-div .input-div,
 .dashboard-form .textarea-div {
-  /* margin: 20px;/ */
+  margin: 10px 0;
   /* border: solid 1px; */
   background-color: #fff;
   /* width: 300px; */
@@ -887,4 +887,13 @@ footer {
   overflow: hidden;
   cursor: pointer;
   border-bottom: var(--main-color) solid 1px;
+}
+/* ====== project ===== */
+.project-form-image-div {
+  border: solid 1px var(--main-color);
+  /* width: 100%; */
+}
+.project-form-image {
+  border: solid 1px var(--primary-color);
+  width: 100%;
 }
