@@ -35,31 +35,23 @@ dropbox.addEventListener('drop', drop, false)
 
 // project show
 
-let projects = [
-  {
-    Image: '/assets/projects/sm.PNG',
-    Name: ' Project 1 ',
-    Discribtion: 'short note about project ',
-    Time: ' Data ',
-    Progress: ' completed ',
-    GitHub_Link: '',
-    Live_Link: '',
-  },
-  {
-    Image: '/assets/projects/lg1.PNG',
-    Name: ' Project 2 ',
-    Discribtion: 'short note about project ',
-    Time: ' Data ',
-    Progress: ' completed ',
-    GitHub_Link: '',
-    Live_Link: '',
-  },
-]
+let projects = []
 
-// mapProject()
+mapProject()
 function mapProject() {
   const projectShow = document.querySelector('.project-show')
   projectShow.innerHTML = ''
+
+  if (projects.length === 0) {
+    const htmlTmp = ` <div class="main-card mb-3">
+    <h3 class="text-center">
+      No project found !!! <br>
+      Add one :)
+    </h3>
+  </div>`
+    projectShow.innerHTML = htmlTmp
+    return
+  }
   projects.map((project) => {
     const {
       Image,
