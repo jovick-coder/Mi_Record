@@ -33,15 +33,15 @@ dropbox.addEventListener('dragenter', dragenter, false)
 dropbox.addEventListener('dragover', dragover, false)
 dropbox.addEventListener('drop', drop, false)
 
-// project show
-
+// === project show ===
+// project array
 let projects = []
 
 mapProject()
 function mapProject() {
   const projectShow = document.querySelector('.project-show')
   projectShow.innerHTML = ''
-
+  // validate project length
   if (projects.length === 0) {
     const htmlTmp = ` <div class="main-card mb-3">
     <h3 class="text-center">
@@ -53,6 +53,7 @@ function mapProject() {
     return
   }
   projects.map((project) => {
+    // Destructure project object
     const {
       Image,
       Name,
@@ -62,6 +63,7 @@ function mapProject() {
       GitHub_Link,
       Live_Link,
     } = project
+    // create a template for mapping
     const htmlTmp = `
     <div class="main-card">
     <div class="img-div">
@@ -74,26 +76,28 @@ function mapProject() {
         <b>Time:</b> ${Time} <br>
         <b>Progress:</b> ${Progress} <br>
         ${
+          // check if git link is empty
           GitHub_Link !== ''
             ? `
-        <div class="d-flex justify-content-between">
-        <b>GitHub_Link:</b><div class="d-flex justify-content-around w-100">
-        <a href="${GitHub_Link}">
+          <div class="d-flex justify-content-between">
+          <b>GitHub_Link:</b><div class="d-flex justify-content-around w-100">
+          <a href="${GitHub_Link}">
           <i class="fas fa-globe"> Open</i>
-        </a>
-        <a href="">
+          </a>
+          <a href="">
           <i class="fas fa-clipboard"> Copy link</i>
-        </a>
-        </div>
-      </div>`
+          </a>
+          </div>
+          </div>`
             : `
-        <div class="d-flex">
-        <b>GitHub_Link:</b><div class='d-flex justify-content-between w-100'> <span class='mx-1'> Empty</span><i class="fas fa-folder-plus mx-3"></i></div>
-        </div>`
+          <div class="d-flex">
+          <b>GitHub_Link:</b><div class='d-flex justify-content-between w-100'> <span class='mx-1'> Empty</span><i class="fas fa-folder-plus mx-3"></i></div>
+          </div>`
         }
- ${
-   Live_Link !== ''
-     ? ` 
+        ${
+          // check if git link is empty
+          Live_Link !== ''
+            ? ` 
         <div class="d-flex justify-content-between">
         <div class="d-flex justify-content-around w-100">
             <a href="${Live_Link}">
@@ -104,40 +108,36 @@ function mapProject() {
             </a>
             </div>
           </div>`
-     : `
+            : `
             <div class="d-flex">
             <b>Live_Link:</b><div class='d-flex justify-content-between w-100'> <span class='mx-1'> Empty</span><i class="fas fa-folder-plus mx-3"></i></div>
             </div> `
- }
+        }
        
 </div>`
-
+    // insect template to Dom
     projectShow.innerHTML += htmlTmp
   })
 }
-// progressCheck()
+// progress variable
 let progress = ''
+// get the selected progress
 const checkboxs = document.querySelectorAll('.progress-checkbox')
 checkboxs.forEach((checkbox) => {
   checkbox.addEventListener('click', (e) => {
     const p = e.target.value
     progress = p
-    // console.log(progress)
   })
 })
-function progressCheck(v) {
-  console.log(v)
-  // return v
-}
+// get project form
 const projectForm = document.querySelector('#project-form')
-
+// add event listener on submite
 projectForm.addEventListener('submit', (e) => {
   e.preventDefault()
   const inputs = e.target
-  const elementType = e.target.type
   let projectProgress = ''
-  // console.dir(Date.now)
 
+  // validate inpusts
   if (inputs[0].value === '') return console.log('Name is requried')
   if (inputs[1].value === '') return console.log('Discribtion is requried')
   if (inputs[2].value === '') console.log('Date not selected')
@@ -157,6 +157,9 @@ projectForm.addEventListener('submit', (e) => {
   if (inputs[6].value === '') console.log('Git link not given')
   if (inputs[7].value === '') console.log('Live link not given')
 
+  // validation end
+
+  // create new object
   const newObj = {
     Image: imageSrc,
     Name: inputs[0].value,
@@ -166,10 +169,9 @@ projectForm.addEventListener('submit', (e) => {
     GitHub_Link: inputs[6].value,
     Live_Link: inputs[7].value,
   }
-  console.log(newObj)
+
+  // add new object to the project array
   projects.push(newObj)
-  console.log(projects)
+  // remap the array of objects
   mapProject()
-  // console.dir(.dataTransfer)
-  // console.log('projectDate ->', projectProgress)
 })
