@@ -75,8 +75,15 @@
         </div>
       </div>
       <div class="full-main-card main-card">
-        <b><i class="fas fa-folder-plus"></i> New Project</b>
-        <div class="row justify-content-around">
+        <div class=" d-flex justify-content-between">
+          <b class="mx-3"><i class="fas fa-folder-plus"></i> New Project</b>
+
+          <label for="add-project" class="mx-3 fancy-btn">
+            Add project
+          </label>
+        </div>
+        <input type="checkbox" id="add-project" style="display: none;">
+        <div class="row justify-content-around project-form-div-row">
           <div class="col-sm-8">
             <div class="form-div dashboard-form">
               <form action="" id="project-form">

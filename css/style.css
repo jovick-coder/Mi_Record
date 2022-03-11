@@ -970,3 +970,11 @@ footer {
     margin-top: 10px;
   }
 }
+.project-form-div-row {
+  height: 0;
+  overflow: hidden;
+}
+
+#add-project:checked ~ .project-form-div-row {
+  height: auto;
+}

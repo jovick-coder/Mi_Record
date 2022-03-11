@@ -43,11 +43,12 @@ function mapProject() {
   projectShow.innerHTML = ''
   // validate project length
   if (projects.length === 0) {
-    const htmlTmp = ` <div class="main-card mb-3">
-    <h3 class="text-center">
-      No project found !!! <br>
-      Add one :)
-    </h3>
+    const htmlTmp = ` <div class="main-card mb-3 flex-colum">
+  <div  class="text-center">  <h3>
+  No project found !!! <br>
+  Add one :) <br>
+  </h3>
+  <label for="add-project" class="fancy-btn mt-2"> Add project</label></div>
   </div>`
     projectShow.innerHTML = htmlTmp
     return
