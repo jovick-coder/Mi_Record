@@ -160,6 +160,10 @@ projectForm.addEventListener('submit', (e) => {
   if (inputs[6].value === '') console.log('Git link not given')
   if (inputs[7].value === '') console.log('Live link not given')
 
+  if (imageSrc === '') {
+    imageSrc = '../assets/projects/alt.jpg'
+  }
+
   // validation end
 
   // create new object
