@@ -978,3 +978,9 @@ footer {
 #add-project:checked ~ .project-form-div-row {
   height: auto;
 }
+.record-count {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 0px 5px;
+  border-radius: 5px;
+}

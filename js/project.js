@@ -39,6 +39,8 @@ let projects = []
 
 mapProject()
 function mapProject() {
+  const projectCount = document.querySelector('#project-count')
+  projectCount.innerHTML = projects.length
   const projectShow = document.querySelector('.project-show')
   projectShow.innerHTML = ''
   // validate project length
