@@ -174,4 +174,18 @@ projectForm.addEventListener('submit', (e) => {
   projects.push(newObj)
   // remap the array of objects
   mapProject()
+
+  dropbox.innerHTML = `
+<label for="project-image">
+  <i class="fas fa-image">
+    <p>Click to Upload picture
+      <br>
+      OR
+      <br>
+      Drag & Drop
+    </p>
+  </i>
+</label>
+<input type="file" id="project-image" placeholder="project-image">
+`
 })
