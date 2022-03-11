@@ -99,7 +99,7 @@ function mapProject() {
           Live_Link !== ''
             ? ` 
         <div class="d-flex justify-content-between">
-        <div class="d-flex justify-content-around w-100">
+        <b>Live_Link:</b> <div class="d-flex justify-content-around w-100">
             <a href="${Live_Link}">
               <i class="fas fa-globe"> Open</i>
             </a>
